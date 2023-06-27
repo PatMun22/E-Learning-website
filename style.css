@@ -22,14 +22,17 @@
 }
 
 body{
-    background-color: var(--light-green-aqua);
+    background: var(--whiter-aqua);
+    display: flex;
+    flex-direction: column;
+    
 }
 /*----------------------main----------------------*/
 main{
     max-width: 90vw;
-    padding: 20px 50px;
+    width: 100%;
+    padding: 20px 0;
     margin: 0 auto;
-    border: 1px solid var(--grey);
     background: var(--whiter-aqua);
  }
 /*-------------------------Header---------------------*/
@@ -40,7 +43,10 @@ header{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    max-width: inherit;
+    width: inherit;
 }
 
 .logo {
@@ -78,7 +84,7 @@ header{
 
  nav > ul > li a{
     color: var(--fade-black);
-    transition: .5s;
+    transition: .5s ease-in-out;
     text-decoration: none;
  }
 
@@ -99,7 +105,7 @@ header{
     border: 1px solid var(--greener-aqua);
     border-radius: 20px;
     outline: none;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     margin-right: 40px;
  }
  .form > .login:hover{
@@ -113,7 +119,7 @@ header{
     border: 1px solid var(--greener-aqua);
     border-radius: 20px;
     outline: none;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
  }
  .form > .register:hover{
     color: var(--fade-black);
@@ -123,18 +129,26 @@ header{
 /*-------------------hero section---------------*/
  #hero{
     margin-top: 120px;
+    max-width: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
  }
  .hero-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 20px;
+    width: inherit;
+    max-width: inherit;
  }
  .textplus{
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: left;
+    width: 60%;
+    display: none;
  }
  .text h1{
     font-family: 'Varela Round';
@@ -148,11 +162,11 @@ header{
     font-family: 'Geologica';
     color: var(--fade-black);
     text-align: left;
+    letter-spacing: 0.1rem;
  }
 .btns{
-    margin: 20px 0;
+    margin: 20px 0 0;
     display: flex;
-    gap: 10px;
     width: 40%;
 }
 .btns > button{
@@ -161,9 +175,11 @@ header{
     border: none;
     outline: none;
 }
+.btns > button > a{
+    text-decoration: none;
+}
 .btns > #explore{
     background: var(--greener-aqua);
-    color: var(--pure-white);
     transition: 0.5s;
 }
 .btns > #learn{
@@ -171,31 +187,49 @@ header{
     background: transparent;
     transition: 0.5s;
 }
-.btns > #explore:hover{
-    background: transparent;
-    border: none;
-    outline: none;
+.btns > #explore a{
+    color: var(--pure-white);
+}
+.btns > #learn > a{
+    color: var(--greener-aqua);
 }
 /*------------picsforrmating--------------*/
 
 /*------------picsforrmating--------------*/
+
 #capacity h2{
     text-transform: capitalize;
+
 }
 #capacity h2 span{
     color: var(--greener-aqua);
 }
-.image-container .grey-bg{
-    background: var(--light-green-aqua);
-    border-radius: 500%, 0, 0, 2%;
+.image-container{
+    width: 40%;
+    height: inherit;
+    background: var(--grey);
+}
+.image-container .green-bg{
+    background: var(--grey);
+    border-radius: 50%, 0, 0, 2%;
     position: absolute;
     z-index: 1;
+    width: inherit;
+    height: inherit;
+    right: 0;
 }
 .image-container .green-bg{
     background: var(--greener-aqua);
-    border-radius: 50%, 0, 0, 2%;
     position: absolute;
-    z-index: 2;
+    z-index: 5;
+    width: inherit;
+    height: 400px;
+    right: 0;
+    border-radius: 90% 0 0 5%;
+}
+.image-container .green-bg img{
+    width: 100%;
+    height: auto;
 }
 #large-circle{
     height: 50px;
@@ -231,6 +265,7 @@ hr{
     margin-top: 10px;
     border: none;
     outline: none;
+    display: none;
 }
 #small-square{
     width: 10px;
@@ -239,11 +274,13 @@ hr{
     margin-left: 0;
     margin-top: -6px;
     transform: rotate(45deg);
+    display: none;
 }
 .specialties-heading{
     height: 150px;
     width: 100vw;
     padding: 50px auto 20px;
+    display: none;
 }
 .specialties-heading > h2{
     font-weight: 600;
@@ -261,6 +298,7 @@ hr{
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    display: none;
 }
 .specialty-div{
     width: 200px;
