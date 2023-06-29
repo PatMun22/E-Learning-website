@@ -173,6 +173,7 @@ header{
     text-transform: capitalize;
     letter-spacing: 0.2rem;
     margin-bottom: 1.2rem;
+    color: var(--fade-black);
  }
  .text p{
     font-family: 'Geologica';
@@ -224,6 +225,7 @@ header{
 #registered-students{
     display: flex;
     gap: -10px;
+    margin-bottom: 15px;
 }
 #pic1, #pic2, #pic3, #pic4{
     width: 50px;
@@ -238,6 +240,7 @@ header{
 
 #capacity h2{
     text-transform: capitalize;
+    color: var(--fade-black);
 
 }
 #capacity h2 span{
@@ -281,6 +284,7 @@ hr{
     font-family: 'Varela Round';
     margin-bottom: 10px;
     font-size: 35px;
+    color: var(--fade-black);
 }
 .specialties-heading > p{
     color: var(--grey);
@@ -341,4 +345,77 @@ hr{
     font-size: 20px;
     font-weight: 400;
     color: var(--greener-aqua);
+}
+/*------------------------about section---------------------*/
+
+#aboutUs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.about-top{
+    padding-top: 100px;
+}
+.about-top h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Varela Round';
+    font-weight: 600;
+    color: var(--fade-black);
+}
+.about-top p{
+    text-align: center;
+    font-size: 30px;
+    font: 'Varela Round';
+    font-size: 400;
+    margin: 5px 0;
+}
+.about-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.about-pics{
+    width: 50%;
+    display: grid;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+    width: 48%;
+}
+.about-content h3{
+    color: var(--greener-aqua);
+    font-family: 'Varela Round';
+    font-size: 30px;
+    font-weight: 400;
+}
+.about-content p{
+    text-align: left;
+    color: var(--grey);
+}
+.about-content button{
+    display: flex;
+    padding: 10px 10px;
+    background-color: var(--greener-aqua);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 25px;
+
+}
+.about-content button .arrow{
+    background-color: var(--pure-white);
+    color: var(--greener-aqua);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 23px 30px 30px 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
 }
