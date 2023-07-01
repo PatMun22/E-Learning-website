@@ -18,6 +18,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Varela Round', 'Geologica', Courier, monospace;
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
@@ -165,7 +166,7 @@ header{
     flex-direction: column;
     gap: 10px;
     justify-content: left;
-    width: 60%;
+    width: 55%;
     margin-top: 100px;
  }
  .empty-div{
@@ -183,16 +184,16 @@ header{
  .text p{
     font-family: 'Geologica';
     font-weight: 500;
-    font-size: 22px;
-    color: var(--fade-black);
+    font-size: 18px;
+    color: var(--grey);
     text-align: left;
-    letter-spacing: 0.1rem;
  }
 .btns{
     margin: 20px 0 0;
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: inherit;
+    gap: 30px;
 }
 .btns > button{
     padding: 15px;
@@ -208,6 +209,10 @@ header{
 .btns > #explore{
     background: var(--greener-aqua);
     transition: 0.5s;
+}
+.btns > #explore > i{
+    color: var(--pure-white);
+    font-size: 3rem;
 }
 .btns > #learn{
     border: none;
@@ -343,8 +348,12 @@ hr{
     margin: 10px;
     color: var(--grey);
 }
-.specialty-div > a{
-    margin: 15px auto;
+.anchor-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.anchor-tag > a{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
@@ -359,7 +368,7 @@ hr{
     flex-wrap: wrap;
 }
 .section-intro{
-    padding-top: 100px;
+    padding-top: 70px;
 }
 .section-intro h1{
     text-align: center;
@@ -563,5 +572,29 @@ hr{
     justify-content: space-evenly;
     background: var(--light-aqua);
     margin-top: 50px;
+    padding: 25px;
+}
+.online-class-inner-container{
+    height: inherit;
+}
+.first{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1.5fr;
+    gap: 10px;
+    margin: 15px;
+
+}
+.mini-icon{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: inherit;
+    height: 30%;
+    margin: 5px 0;
+}
+.mini-icon h2{
+    margin-left: 20px;
+    color: var(--fade-black);
 
 }
