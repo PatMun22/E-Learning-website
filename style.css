@@ -242,9 +242,25 @@ header{
     height: 50px;
     border-radius: 50%;
 }
+#pic1{
+    z-index: 1;
+}
+#pic2{
+    z-index: 2;
+    margin-left: -25px;
+}
+#pic3{
+    z-index: 3;
+    margin-left: -25px;
+}
+#pic4{
+    z-index: 4;
+    margin-left: -25px;
+}
 .pics img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    border-radius: 50%;
 }
 /*------------#capacity forrmating--------------*/
 
@@ -379,10 +395,11 @@ hr{
 }
 .section-intro p{
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
     font: 'Varela Round';
-    font-size: 400;
+    font-weight: 400;
     margin: 5px 0;
+    color: var(--grey);
 }
 .about-bottom{
     display: flex;
@@ -410,10 +427,10 @@ hr{
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.about-pics .pics{
+.about-pics .about-pictures{
     border-radius: 50px;
 }
-.about-pics .pics img{
+.about-pics .about-pictures img{
     width: 100%;
     height: 100%;
 }
@@ -570,18 +587,22 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 30px;
     background: var(--light-aqua);
     margin-top: 50px;
     padding: 25px;
 }
 .online-class-inner-container{
-    height: 80%;
+    height: 100%;
+    width: 50%;
 }
 .first{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: 15px;
+    width: 45%;
+    padding: 50px 0;
+    grid-gap: 20px;
 }
 #one, #two, #three{
     border-radius: 15px;
@@ -593,7 +614,13 @@ hr{
 #one{
     background-color: var(--yellow);
 }
-
+#two{
+    margin-top: 100px;
+    transition: 0.5s ease-in-out;
+}
+#two:hover{
+    transform: translate(-5px, 10px);
+}
 #three{
     background-color: var(--greener-aqua);
 }
@@ -609,16 +636,48 @@ hr{
 #four{
     background-color: var(--greener-aqua);
     border-radius: 50%;
+    transition: 0.5s ease-in-out;
 }
 .inner-image-container{
     height: inherit;
     width: inherit;
     border-radius: 15px;
+    transition: 0.5s ease-in-out;
+}
+.container1:hover{
+    transform: translate(10px, -10px);
+}
+.container2:hover{
+    transform: translate(-10px, -10px);
+}
+.container3:hover{
+    transform: translate(-15px, 12px);
 }
 .inner-image-container img{
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+#five{
+    grid-column: 2 / -1;
+    padding-top: 40px;
+}
+#five button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px;
+    color: var(--pure-white);
+    font-size: 1rem;
+}
+#btn-1{
+    background-color: var(--light-red);
+    width: 100px;
+}
+#btn-2{
+    background-color: var(--greener-aqua);
+    width: 150px;
+    margin-left: 20px;
 }
 .mini-icon{
     display: flex;
@@ -631,4 +690,86 @@ hr{
 .mini-icon h2{
     margin-left: 20px;
     color: var(--fade-black);
+}
+.course-selection-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    margin: 20px 0;
+    height: 250px;
+}
+.inner-course-selection-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.inner-course-selection-div button{
+    width: 35%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: var(--pure-white);
+    font-size: 18px;
+    margin: 10px 0;
+}
+footer{
+    width: inherit;
+    height: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.footer-div1{
+    height: 250px;
+    width: 100%;
+    background-color: var(--greener-aqua);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.footer-div1 h1{
+    color: var(--whiter-aqua);
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+footer .empty-div{
+    max-width: 90vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .empty-div form{
+    margin: 20px;
+}
+footer .empty-div form input, button{
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 20px;
+}
+footer .empty-div form input{
+    width: 220px;
+}
+footer .empty-div form button{
+    width: 150px;
+}
+.footer-div2{
+    max-width: 90vw;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
 }

@@ -1,296 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Learning Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <main>
-        <header>
-            <div class="logo">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <a href="#">Learn.Com</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#aboutUs">About Us</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                </ul>
-            </nav>
-            <div class="form">
-                <button class="login">Login</button>
-                <button class="register">Register Now</button>
-            </div>
-        </header>
-        <section id="hero">
-            <div class="hero-container">
-                <div class="textplus">
-                    <div class="text">
-                        <h1>education is the passport to the future</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellat pariatur totam odit illum architecto, doloremque praesentium provident dignissimos modi, perferendis quis itaque magni, ut ad illo nesciunt explicabo sint!</p>
-                    </div>
-                    <div class="btns">
-                        <button id="explore"><i class="fa-solid fa-rocket-launch"></i><a href="#">Explore Course</a></button>
-                        <button id="learn"><a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a></button>
-                    </div>
-                    <div id="capacity">
-                        <div id="registered-students">
-                            <div id="pic1" class="pics">
-                                <img src="images/std1.PNG" alt="student 1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Learning Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <a href="#">Learn.Com</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#hero" class="active">Home</a></li>
+                        <li><a href="#aboutUs">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#blogs">Blogs</a></li>
+                    </ul>
+                </nav>
+                <div class="form">
+                    <button class="login">Login</button>
+                    <button class="register">Register Now</button>
+                </div>
+            </header>
+            <section id="hero">
+                <div class="hero-container">
+                    <div class="textplus">
+                        <div class="text">
+                            <h1>education is the passport to the future</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellat pariatur totam odit illum architecto, doloremque praesentium provident dignissimos modi, perferendis quis itaque magni, ut ad illo nesciunt explicabo sint!</p>
+                        </div>
+                        <div class="btns">
+                            <button id="explore"><i class="fa-solid fa-rocket-launch"></i><a href="#">Explore Course</a></button>
+                            <button id="learn"><a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a></button>
+                        </div>
+                        <div id="capacity">
+                            <div id="registered-students">
+                                <div id="pic1" class="pics">
+                                    <img src="images/std1.PNG" alt="student 1">
+                                </div>
+                                <div id="pic2" class="pics">
+                                    <img src="images/std2.PNG" alt="student 2">
+                                </div>
+                                <div id="pic3" class="pics">
+                                    <img src="images/std3.PNG" alt="student 3">
+                                </div>
+                                <div id="pic4" class="pics">
+                                    <img src="images/std4.PNG" alt="student 4">
+                                </div>
                             </div>
-                            <div id="pic2" class="pics">
-                                <img src="images/std2.PNG" alt="student 2">
+                            <h2>10k+ <span>students</span> have completed course</h2>
+                        </div>
+                    </div>
+                    <div class="empty-div"></div>
+                </div>
+                <div class="in-btn-seg">
+                    <hr>
+                    <div id="small-square"></div>
+                </div>
+                <div id="specialties">
+                    <div class="specialties-heading">
+                        <h2>our specialties</h2>
+                        <p>We offer all types of specialties</p>
+                    </div>
+                    <div class="specialties">
+                        <div class="specialty-div">
+                            <div class="mini-speciality-div"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h2>Video Calling</h2>
+                            <p>Call your team member or teacher at any time</p>
+                            <div class="anchor-tag">
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
                             </div>
-                            <div id="pic3" class="pics">
-                                <img src="images/std3.PNG" alt="student 3">
+                        </div>
+                        <div class="specialty-div">
+                            <div class="mini-speciality-div"><i class="fa-solid fa-users"></i></div>
+                            <h2>Group Learning</h2>
+                            <p>Share your studies with other students and get..</p>
+                            <div class="anchor-tag">
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
                             </div>
-                            <div id="pic4" class="pics">
-                                <img src="images/std4.PNG" alt="student 4">
+                        </div>
+                        <div class="specialty-div">
+                            <div class="mini-speciality-div"><i class="fa-solid fa-person-chalkboard"></i></div>
+                            <h2>Expert Teachers</h2>
+                            <p>High qualified teachers are always essential for...</p>
+                            <div class="anchor-tag">
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
                             </div>
                         </div>
-                        <h2>10k+ <span>students</span> have completed course</h2>
+                        <div class="specialty-div">
+                            <div class="mini-speciality-div"><i class="fa-regular fa-clipboard"></i></div>
+                            <h2>Practical Work</h2>
+                            <p>Teachers give you practica; tasks to increase your</p>
+                            <div class="anchor-tag">
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="empty-div"></div>
+            </section>
+            <section id="aboutUs">
+                <div class="section-intro">
+                    <h1>About Us</h1>
+                    <p>Know who we are and what we provide</p>
+                </div>
+                <div class="about-bottom">
+                    <div class="about-pics">
+                        <div class="about-pictures item-1">
+                            <img src="images/coinedlaptop.PNG" alt="">
+                        </div>
+                        <div class="about-pictures item-2">
+                            <img src="images/litup.PNG" alt="">
+                        </div>
+                        <div class="about-pictures item-3">
+                            <img src="images/teacher.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <h3>Welcome to our education service now you increase your knowledge.</h3>
+                        <p>our platform offers a wide range of courses curated by experts in their respective fieldes, from academic subjects to practical skills. Our comprehensive catalogue ensures there is something for everyone.</p>
+                        <button>Know More<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </section>
+            <section id="courses">
+                <div class="section-intro">
+                    <h1>Explore Courses By Categories</h1>
+                    <p>lets explore your choice of course</p>
+                </div>
+                <div class="course-categories">
+                    <div class="course-category-div">
+                        <div class="icon"><i class="fa-brands fa-salesforce"></i></div>
+                        <div class="course-content">
+                            <h2>Force Sales</h2>
+                            <p>03 Months of classes</p>
+                            <div>
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-category-div">
+                        <div class="icon"><i class="fa-sharp fa-solid fa-computer"></i></div>
+                        <div class="course-content">
+                            <h2>Graphic Design</h2>
+                            <p>03 Months of classes</p>
+                            <div>
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-category-div">
+                        <div class="icon"><i class="fa-sharp fa-solid fa-network-wired"></i></div>
+                        <div class="course-content">
+                            <h2>UI UX Design</h2>
+                            <p>06 Months of classes</p>
+                            <div>
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-category-div">
+                        <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="course-content">
+                            <h2>Web Development</h2>
+                            <p>03 Months of classes</p>
+                            <div>
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-category-div">
+                        <div class="icon"><i class="fa-solid fa-comments-dollar"></i></div>
+                        <div class="course-content">
+                            <h2>Digital Marketing</h2>
+                            <p>03 Months of classes</p>
+                            <div>
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-category-div">
+                        <div class="icon"><i class="fa-brands fa-aws"></i></div>
+                        <div class="course-content">
+                            <h2>Amazon</h2>
+                            <p>03 Months of classes</p>
+                            <div>
+                                <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-intro">
+                    <h1>Most Popular Courses</h1>
+                    <p>Some Of Our Popular Courses</p>
+                </div>
+                <div class="popular-courses">
+                    <div class="course-category-div2">
+                        <div class="image-div">
+                            <img src="images/cam.PNG" alt="">
+                        </div>
+                        <div class="course-content">
+                            <h2>Video Production</h2>
+                            <p>learn vidoe production with modern tools and methods..</p>
+                            <p>(5.6)</p>
+                            <div class="below">
+                                <h2>20+ Courses</h2>
+                                <button class="inner-div">
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-category-div2">
+                        <div class="image-div">
+                            <img src="images/exercise.PNG" alt="">
+                        </div>
+                        <div class="course-content">
+                            <h2>Health and Fitness</h2>
+                            <p>Care your health and make a young look get rid of looking heavy..</p>
+                            <p>(3.4)</p>
+                            <div class="below">
+                                <h2>20+ Courses</h2>
+                                <button class="inner-div">
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-category-div2">
+                        <div class="image-div">
+                            <img src="images/yellow.PNG" alt="">
+                        </div>
+                        <div class="course-content">
+                            <h2>Arts and Crafts</h2>
+                            <p>learn more arts and crafts and increase your creativity..</p>
+                            <p>(8.2)</p>
+                            <div class="below">
+                                <h2>20+ Courses</h2>
+                                <button class="inner-div">
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-intro">
+                    <h1>Online Live Classes</h1>
+                    <p>We take 24/7 support classes</p>
+                </div>
+                <div class="online-class-container">
+                    <div class="online-class-inner-container first">
+                        <div id="one">
+                            <div class="inner-image-container container1">
+                                <img src="images/std1.PNG" alt="student image">
+                            </div>
+                        </div>
+                        <div id="two">
+                            <img src="images/std2.PNG" alt="student image">
+                        </div>
+                        <div id="three">
+                            <div class="inner-image-container container2">
+                                <img src="images/std3.PNG" alt="student image">
+                            </div>
+                        </div>
+                        <div id="four">
+                            <div class="inner-image-container container3">
+                                <img src="images/std4.PNG" alt="student image">
+                            </div>
+                        </div>
+                        <div id="five">
+                            <button id="btn-1">call <i class="fa-solid fa-phone"></i></button>
+                            <button id="btn-2">Start Now </button>
+                        </div>
+                    </div>
+                    <div class="online-class-inner-container second">
+                        <div class="mini-icon">
+                            <i class="fa-light fa-user-graduate"></i><h2>Ask about your career</h2>
+                        </div>
+                        <div class="mini-icon">
+                            <i class="fa-solid fa-question"></i><h2>Ask your education questions</h2>
+                        </div>
+                        <div class="mini-icon">
+                            <i class="fa-sharp fa-light fa-share-nodes"></i><h2>Share your opinions</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-intro">
+                    <h1>Get Started Now</h1>
+                    <p>Whether you're a student looking to suplement your classroom 
+                        or a professional aiming to acquire new skills, get started now offers a diverse
+                        selection of courses in various disciplines. from technology and business to arts 
+                        and personal development. There's
+                    </p>
+                </div>
+                <div class="course-selection-container">
+                    <div class="inner-course-selection-div">
+                        <h2>For Instructors</h2>
+                        <button class="btn-left">Take a class today</button>
+                    </div>
+                    <div class="inner-course-selection-div">
+                        <h2>For Students</h2>
+                        <button class="btn-right">Start learning now</button> 
+                    </div>
+                </div>
+            </section>
+            <section id="blogs">
+                <div class="section-intro">
+                    <h1>Latest news and resources</h1>
+                    <p>unlock your learning potential with our educational specialists</p>
+                </div>
+                <div class="blogcontainer">
+                    <div class="inner-blog-container first">
+                        <div id="">
+                            <img src="" alt="">
+                        </div>
+                        <a href="" target="_blank">Latest Article</a>
+                        <h3>Top tips in order to fast understanding of class topics</h3>
+                        <a href="" target="_blank">Learn More</a>
+                    </div>
+                    <div class="inner-blog-container second">
+                        <div class="mini-second">
+                            <div>
+                                <img src="" alt="">
+                                <a href="" target="_blank">Learn More</a>
+                            </div>
+                            <div>
+                                <h3>How to use technology in order to access new designs</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Laboriosam fugiat tempore officiis quos assumenda error. Suscipit 
+                                    assumenda laudantium quod eum expedita, quasi unde officia 
+                                    laboriosam commodi quisquam repellat nesciunt in?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mini-second">
+                            <div>
+                                <img src="" alt="">
+                                <a href="" target="_blank">Learn More</a>
+                            </div>
+                            <div>
+                                <h3>How to use technology in order to access new designs</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Laboriosam fugiat tempore officiis quos assumenda error. Suscipit 
+                                    assumenda laudantium quod eum expedita, quasi unde officia 
+                                    laboriosam commodi quisquam repellat nesciunt in?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mini-second">
+                            <div>
+                                <img src="" alt="">
+                                <a href="" target="_blank">Learn More</a>
+                            </div>
+                            <div>
+                                <h3>How to use technology in order to access new designs</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Laboriosam fugiat tempore officiis quos assumenda error. Suscipit 
+                                    assumenda laudantium quod eum expedita, quasi unde officia 
+                                    laboriosam commodi quisquam repellat nesciunt in?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-div1">
+                <div class="empty-div">
+                    <h1>subscribe to our <span>newsletter</span> to get new updates.</h1>
+                    <form action="">
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
             </div>
-            <div class="in-btn-seg">
-                <hr>
-                <div id="small-square"></div>
-            </div>
-            <div id="specialties">
-                <div class="specialties-heading">
-                    <h2>our specialties</h2>
-                    <p>We offer all types of specialties</p>
+            <div class="footer-div2">
+                <div>
+                    <div class="logo">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <a href="#" target="_blank">Learn.Com</a>
+                    </div>
+                    <p>Learn.Com is a unique patform for those students who want to learn modern and unique skills in the modern age.</p>
                 </div>
-                <div class="specialties">
-                    <div class="specialty-div">
-                        <div class="mini-speciality-div"><i class="fa-solid fa-laptop-code"></i></div>
-                        <h2>Video Calling</h2>
-                        <p>Call your team member or teacher at any time</p>
-                        <div class="anchor-tag">
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="specialty-div">
-                        <div class="mini-speciality-div"><i class="fa-solid fa-users"></i></div>
-                        <h2>Group Learning</h2>
-                        <p>Share your studies with other students and get..</p>
-                        <div class="anchor-tag">
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="specialty-div">
-                        <div class="mini-speciality-div"><i class="fa-solid fa-person-chalkboard"></i></div>
-                        <h2>Expert Teachers</h2>
-                        <p>High qualified teachers are always essential for...</p>
-                        <div class="anchor-tag">
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="specialty-div">
-                        <div class="mini-speciality-div"><i class="fa-regular fa-clipboard"></i></div>
-                        <h2>Practical Work</h2>
-                        <p>Teachers give you practica; tasks to increase your</p>
-                        <div class="anchor-tag">
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
+                <div>
+                    <h2>Courses</h2>
+                    <a href="#" target="_blank">ALL</a>
+                    <a href="#" target="_blank">Course Fee</a>
+                    <a href="#" target="_blank">Enrollment</a>
+                    <a href="#" target="_blank">Popular course</a>
                 </div>
-            </div>
-        </section>
-        <section id="aboutUs">
-            <div class="section-intro">
-                <h1>About Us</h1>
-                <p>Know who we are and what we provide</p>
-            </div>
-            <div class="about-bottom">
-                <div class="about-pics">
-                    <div class="pics item-1">
-                        <img src="images/coinedlaptop.PNG" alt="">
-                    </div>
-                    <div class="pics item-2">
-                        <img src="images/litup.PNG" alt="">
-                    </div>
-                    <div class="pics item-3">
-                        <img src="images/teacher.PNG" alt="">
-                    </div>
+                <div>
+                    <h2>Services</h2>
+                    <a href="#" target="_blank">Online classes</a>
+                    <a href="#" target="_blank">All courses</a>
+                    <a href="#" target="_blank">New courses</a>
                 </div>
-                <div class="about-content">
-                    <h3>Welcome to our education service now you increase your knowledge.</h3>
-                    <p>our platform offers a wide range of courses curated by experts in their respective fieldes, from academic subjects to practical skills. Our comprehensive catalogue ensures there is something for everyone.</p>
-                    <button>Know More<i class="fa-solid fa-arrow-right"></i></button>
+                <div>
+                    <h2>Blogs</h2>
+                    <a href="#" target="_blank">Help</a>
+                    <a href="#" target="_blank">Support</a>
+                    <a href="#" target="_blank">Clients</a>
+                    <a href="#" target="_blank">Contact</a>
                 </div>
-            </div>
-        </section>
-        <section id="courses">
-            <div class="section-intro">
-                <h1>Explore Courses By Categories</h1>
-                <p>lets explore your choice of course</p>
-            </div>
-            <div class="course-categories">
-                <div class="course-category-div">
-                    <div class="icon"><i class="fa-brands fa-salesforce"></i></div>
-                    <div class="course-content">
-                        <h2>Force Sales</h2>
-                        <p>03 Months of classes</p>
-                        <div>
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-category-div">
-                    <div class="icon"><i class="fa-sharp fa-solid fa-computer"></i></div>
-                    <div class="course-content">
-                        <h2>Graphic Design</h2>
-                        <p>03 Months of classes</p>
-                        <div>
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-category-div">
-                    <div class="icon"><i class="fa-sharp fa-solid fa-network-wired"></i></div>
-                    <div class="course-content">
-                        <h2>UI UX Design</h2>
-                        <p>06 Months of classes</p>
-                        <div>
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-category-div">
-                    <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
-                    <div class="course-content">
-                        <h2>Web Development</h2>
-                        <p>03 Months of classes</p>
-                        <div>
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-category-div">
-                    <div class="icon"><i class="fa-solid fa-comments-dollar"></i></div>
-                    <div class="course-content">
-                        <h2>Digital Marketing</h2>
-                        <p>03 Months of classes</p>
-                        <div>
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-category-div">
-                    <div class="icon"><i class="fa-brands fa-aws"></i></div>
-                    <div class="course-content">
-                        <h2>Amazon</h2>
-                        <p>03 Months of classes</p>
-                        <div>
-                            <a href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-intro">
-                <h1>Most Popular Courses</h1>
-                <p>Some Of Our Popular Courses</p>
-            </div>
-            <div class="popular-courses">
-                <div class="course-category-div2">
-                    <div class="image-div">
-                        <img src="images/cam.PNG" alt="">
-                    </div>
-                    <div class="course-content">
-                        <h2>Video Production</h2>
-                        <p>learn vidoe production with modern tools and methods..</p>
-                        <p>(5.6)</p>
-                        <div class="below">
-                            <h2>20+ Courses</h2>
-                            <button class="inner-div">
-                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-category-div2">
-                    <div class="image-div">
-                        <img src="images/exercise.PNG" alt="">
-                    </div>
-                    <div class="course-content">
-                        <h2>Health and Fitness</h2>
-                        <p>Care your health and make a young look get rid of looking heavy..</p>
-                        <p>(3.4)</p>
-                        <div class="below">
-                            <h2>20+ Courses</h2>
-                            <button class="inner-div">
-                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-category-div2">
-                    <div class="image-div">
-                        <img src="images/yellow.PNG" alt="">
-                    </div>
-                    <div class="course-content">
-                        <h2>Arts and Crafts</h2>
-                        <p>learn more arts and crafts and increase your creativity..</p>
-                        <p>(8.2)</p>
-                        <div class="below">
-                            <h2>20+ Courses</h2>
-                            <button class="inner-div">
-                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-intro">
-                <h1>Online Live Classes</h1>
-                <p>We take 24/7 support classes</p>
-            </div>
-            <div class="online-class-container">
-                <div class="online-class-inner-container first">
-                    <div id="one">
-                        <div class="inner-image-container">
-                            <img src="images/std1.PNG" alt="student image">
-                        </div>
-                    </div>
-                    <div id="two">
-                        <img src="images/std2.PNG" alt="student image">
-                    </div>
-                    <div id="three">
-                        <div class="inner-image-container">
-                            <img src="images/std3.PNG" alt="student image">
-                        </div>
-                    </div>
-                    <div id="four">
-                        <div class="inner-image-container">
-                            <img src="images/std4.PNG" alt="student image">
-                        </div>
-                    </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <a>+254 782 897 889</a>
+                    <a>learncom@gmail.com</a>
                     <div>
-                        <button>call <i class="fa-solid fa-phone"></i></button>
-                        <button>Start Now </button>
-                    </div>
-                </div>
-                <div class="online-class-inner-container second">
-                    <div class="mini-icon">
-                        <i class="fa-light fa-user-graduate"></i><h2>Ask about your career</h2>
-                    </div>
-                    <div class="mini-icon">
-                        <i class="fa-solid fa-question"></i><h2>Ask your education questions</h2>
-                    </div>
-                    <div class="mini-icon">
-                        <i class="fa-sharp fa-light fa-share-nodes"></i><h2>Share your opinions</h2>
+                        <p>follow us on</p>
+                        <div class="social-icons">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="blogs"></section>
-    </main>
-</body>
+            <div class="footer-div3">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>Thank you for visiting</div>
+                <div></div>
+                <div></div>
+                <div></div> 
+            </div>
+        </footer>
+    </body>
 </html>
