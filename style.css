@@ -689,6 +689,7 @@ hr{
     width: inherit;
     height: 30%;
     margin: 5px 0;
+    gap: 50px;
 }
 .mini-icon h2{
     margin-left: 20px;
@@ -708,6 +709,8 @@ hr{
     align-items: center;
     justify-content: center;
     width: 50%;
+    border: none;
+    border-radius: 30px;
 }
 .inner-course-selection-div button{
     width: 35%;
@@ -718,6 +721,16 @@ hr{
     color: var(--pure-white);
     font-size: 18px;
     margin: 10px 0;
+}
+.div-uno {
+    background-image: url('images/instructors.PNG');
+    background-position: center;
+    background-size: 100% 100%;
+}
+.div-2 {
+    background-image: url('images/students.PNG');
+    background-position: center;
+    background-size: 100% 100%;
 }
 footer{
     width: inherit;
@@ -765,7 +778,7 @@ footer .empty-div form input, button{
     font-size: 20px;
 }
 footer .empty-div form input{
-    width: 220px;
+    width: 500px;
 }
 footer .empty-div form button{
     width: 150px;
@@ -773,7 +786,7 @@ footer .empty-div form button{
 .footer-div2{
     max-width: 90vw;
     width: 80%;
-    margin: 30px auto;
+    margin: 30px auto 10px;
     display: flex;
     gap: 35px;
     justify-content: space-between;
@@ -791,6 +804,8 @@ footer .empty-div form button{
 .left-div p{
     text-align: left;
     line-height: 1.8rem;
+    font-size: 18px;
+    color: var(--fade-black);
 }
 .left-div-top{
     display: flex;
@@ -807,9 +822,7 @@ footer .empty-div form button{
     font-size: 20px;
     font-weight: 800;
 }
-.left-div-top, h2{
-    font-size: 18px;
-    color: var(--fade-black);
+.left-div-top {
     margin-bottom: 20px;
     font-family: 'Geologica';
 }
@@ -863,70 +876,48 @@ footer .empty-div form button{
 }
 .footer-div3 p{
     padding: 30px 0 10px;
+    text-transform: capitalize;
 }
-.sdiv1 {
+.sdiv {
     border: none;
     outline: none;
     border-radius: 50%;
     background-color: var(--light-green-aqua);
+    position: absolute;
+}
+.sdiv1 {
     height: 20px;
     width: 20px;
-    position: absolute;
     top: 15px;
     left: 100px;
 }
 .sdiv2 {
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    background-color: var(--light-green-aqua);
     height: 20px;
     width: 20px;
-    position: absolute;
     top: 15px;
     right: 100px;
 }
 .sdiv3 {
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    background-color: var(--light-green-aqua);
     height: 15px;
     width: 15px;
-    position: absolute;
     top: 35px;
     left: 115px;
 }
 .sdiv4 {
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    background-color: var(--light-green-aqua);
     height: 15px;
     width: 15px;
-    position: absolute;
     top: 35px;
     right: 115px;
 }
 .sdiv5 {
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    background-color: var(--light-green-aqua);
     height: 10px;
     width: 10px;
-    position: absolute;
     top: 50px;
     left: 130px;
 }
 .sdiv6 {
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    background-color: var(--light-green-aqua);
     height: 10px;
     width: 10px;
-    position: absolute;
     top: 50px;
     right: 130px;
 }
