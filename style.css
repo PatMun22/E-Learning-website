@@ -13,6 +13,9 @@
     --fade-black: hsl(0,0%,20%);
     --grey: hsl(180, 0%, 50%);
     --yellow: hsl(45, 100%, 50%);
+    --facebook: hsl(216, 85%, 39%);
+    --twitter: hsl(205, 100%, 50%);
+    --instagram: hsl(300, 50%, 50%);
 }
 
 *{
@@ -718,7 +721,7 @@ hr{
 }
 footer{
     width: inherit;
-    height: 500px;
+    height: 650px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -769,7 +772,162 @@ footer .empty-div form button{
 }
 .footer-div2{
     max-width: 90vw;
-    width: 100%;
+    width: 80%;
     margin: 30px auto;
     display: flex;
+    gap: 35px;
+    justify-content: space-between;
 }
+.footer-div21{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+.left-div{
+    width: 30%;
+    margin-top: 50px;
+}
+.left-div p{
+    text-align: left;
+    line-height: 1.8rem;
+}
+.left-div-top{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.left-div-top i{
+    color: var(--greener-aqua);
+    font-size: 30px;
+}
+.left-div-top a {
+    color: var(--fade-black);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+}
+.left-div-top, h2{
+    font-size: 18px;
+    color: var(--fade-black);
+    margin-bottom: 20px;
+    font-family: 'Geologica';
+}
+.footer-div21 a{
+    text-decoration: none;
+    color: var(--fade-black);
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+}
+.footer-div21 a:hover {
+    color: var(--greener-aqua);
+}
+.footer-div21 a i{
+    margin-right: 10px;
+}
+.footer-div21 p{
+    margin: 20px 0 10px;
+    text-align: left;
+}
+.social-icons{
+    display: inline-flex;
+    font-size: 1.8rem;
+    gap: 15px;
+}
+.social-icons a i{
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+}
+.social-icons a i:hover{
+    transform: scale(1.5);
+}
+.fa-square-instagram {
+    color: var(--instagram);
+}
+.fa-facebook{
+    color: var(--facebook);
+}
+.fa-twitter{
+    color: var(--twitter);
+}
+.footer-div3{
+    width: 50%;
+    height: 100px;
+    color: var(--greener-aqua);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Varela Round';
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.footer-div3 p{
+    padding: 30px 0 10px;
+}
+.sdiv1 {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: var(--light-green-aqua);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+.sdiv2 {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: var(--light-green-aqua);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+}
+.sdiv3 {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: var(--light-green-aqua);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 35px;
+    left: 115px;
+}
+.sdiv4 {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: var(--light-green-aqua);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 35px;
+    right: 115px;
+}
+.sdiv5 {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: var(--light-green-aqua);
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 50px;
+    left: 130px;
+}
+.sdiv6 {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: var(--light-green-aqua);
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 50px;
+    right: 130px;
+}
+
