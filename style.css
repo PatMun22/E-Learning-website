@@ -110,6 +110,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-left: 90px;
  }
  .form > .login{
@@ -152,11 +153,13 @@ header{
     width: inherit;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
  }
  .hero-container{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: inherit;
     max-width: inherit;
     height: 500px;
@@ -170,6 +173,7 @@ header{
     flex-direction: column;
     gap: 10px;
     justify-content: left;
+    flex-wrap: wrap;
     width: 55%;
     margin-top: 100px;
  }
@@ -196,6 +200,7 @@ header{
     margin: 20px 0 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: inherit;
     gap: 30px;
 }
@@ -232,8 +237,10 @@ header{
 /*------------#capacity forrmating--------------*/
 #capacity{
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 5px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 #registered-students{
@@ -350,6 +357,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .mini-speciality-div i{
     font-size: 50px;
@@ -371,6 +379,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .anchor-tag > a{
     text-decoration: none;
@@ -384,7 +393,6 @@ hr{
 #aboutUs{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 .section-intro{
     padding-top: 70px;
@@ -409,6 +417,7 @@ hr{
     align-items: center;
     justify-content: space-between;
     grid-gap: 50px;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 .about-pics{
@@ -458,6 +467,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px 10px;
     background-color: var(--greener-aqua);
     border: none;
@@ -495,6 +505,7 @@ hr{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    flex-wrap: wrap;
     padding: 25px;
 }
 .icon{
@@ -506,6 +517,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     color: var(--greener-aqua);
 }
 .icon i{
@@ -530,6 +542,7 @@ hr{
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
+    flex-wrap: wrap;
     padding: 25px;
 }
 .image-div{
@@ -546,6 +559,7 @@ hr{
     gap: 5px;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .course-category-div2 .course-content h2{
     color: var(--fade-black);
@@ -559,6 +573,7 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 300px;
 }
 .course-category-div2 .course-content .below h2{
@@ -574,6 +589,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .course-category-div2 .course-content .below .inner-div i{
     color: var(--greener-aqua);
@@ -592,6 +608,7 @@ hr{
     align-items: center;
     justify-content: space-evenly;
     gap: 30px;
+    flex-wrap: wrap;
     background: var(--light-aqua);
     margin-top: 50px;
     padding: 25px;
@@ -686,6 +703,7 @@ hr{
 .mini-icon{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0 10px;
     width: inherit;
     height: 30%;
@@ -701,6 +719,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: inherit;
     margin: 20px 0;
     height: 350px;
@@ -750,6 +769,7 @@ hr{
     align-items: stretch;
     justify-content: space-between;
     gap: 50px;
+    flex-wrap: wrap;
     width: inherit;
     height: 500px;
     margin: 30px 0 50px;
@@ -802,6 +822,7 @@ hr{
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 .blog-second .mini-second .mini-second1{
     border: none;
@@ -850,6 +871,7 @@ footer{
     background-color: transparent;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .footer-div1{
     height: 250px;
@@ -902,6 +924,7 @@ footer .empty-div form button{
     display: flex;
     gap: 35px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-div21{
     display: flex;
@@ -997,40 +1020,37 @@ footer .empty-div form button{
     background-color: var(--light-green-aqua);
     position: absolute;
 }
-.sdiv1 {
+.sdiv1, .sdiv2 {
     height: 20px;
     width: 20px;
     top: 15px;
+}
+.sdiv1{
     left: 100px;
 }
 .sdiv2 {
-    height: 20px;
-    width: 20px;
-    top: 15px;
     right: 100px;
 }
-.sdiv3 {
+.sdiv3, .sdiv4 {
     height: 15px;
     width: 15px;
     top: 35px;
+}
+.sdiv3 {
     left: 115px;
 }
 .sdiv4 {
-    height: 15px;
-    width: 15px;
-    top: 35px;
     right: 115px;
 }
-.sdiv5 {
+.sdiv5, .sdiv6 {
     height: 10px;
     width: 10px;
     top: 50px;
+}
+.sdiv5 {
     left: 130px;
 }
 .sdiv6 {
-    height: 10px;
-    width: 10px;
-    top: 50px;
     right: 130px;
 }
 
