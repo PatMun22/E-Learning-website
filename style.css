@@ -9,7 +9,7 @@
     --greener-aqua: hsl(180, 90%, 33%);
     --light-green-aqua: hsl(180, 60%, 85%);
     --light-red: hsl(0, 100%, 60%);
-    --pure-white: #fff;
+    --pure-white: rgb(255, 255, 255);
     --fade-black: hsl(0,0%,20%);
     --grey: hsl(180, 0%, 50%);
     --yellow: hsl(45, 100%, 50%);
@@ -25,7 +25,7 @@
     padding: 0;
     margin: 0;
 }
-
+/*--------------------------------body------------------------------------------*/
 body{
     background: var(--whiter-aqua);
     display: flex;
@@ -123,6 +123,7 @@ header{
     margin-right: 40px;
     font-size: 20px;
     font-weight: 400;
+    width: 100px;
  }
  .form > .login:hover{
     background-color: var(--greener-aqua);
@@ -265,8 +266,6 @@ header{
     height: 100%;
     border-radius: 50%;
 }
-/*------------#capacity forrmating--------------*/
-
 #capacity h2{
     text-transform: capitalize;
     color: var(--fade-black);
@@ -299,6 +298,7 @@ hr{
     margin-top: -6px;
     transform: rotate(45deg);
 }
+/*--------------------------------specialties------------------------------------------*/
 #specialties{
     width: inherit;
     padding-top: 100px;
@@ -379,7 +379,7 @@ hr{
     font-weight: 400;
     color: var(--greener-aqua);
 }
-/*------------------------about section---------------------*/
+/*------------------------about Us section---------------------*/
 
 #aboutUs{
     display: flex;
@@ -476,6 +476,7 @@ hr{
     border: none;
     border-radius: 23px 30px 30px 23px;
 }
+/*-------------------------------------------Courses section------------------------------------------*/
 .course-categories, .popular-courses{
     display: flex;
     align-items: center;
@@ -695,32 +696,43 @@ hr{
     margin-left: 20px;
     color: var(--fade-black);
 }
+/*-------------------------------start now subsection--------------------------------*/
 .course-selection-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: inherit;
     margin: 20px 0;
-    height: 250px;
+    height: 350px;
+
 }
 .inner-course-selection-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    width: 45%;
+    height: 300px;
+    padding: 150px 30px 0;
     border: none;
     border-radius: 30px;
 }
+.inner-course-selection-div h2{
+    color: var(--pure-white);
+    font-size: 25px;
+    font-family: 'Geologica';
+}
 .inner-course-selection-div button{
-    width: 35%;
+    width: 60%;
     padding: 15px;
-    border: none;
+    border: 1.5px solid var(--pure-white);
     outline: none;
     border-radius: 30px;
     color: var(--pure-white);
-    font-size: 18px;
-    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 20px;
+    margin: 20px 0 0;
+    transition: 0.5s ease-in-out;
+}
+.inner-course-selection-div button:hover{
+    background-color: var(--greener-aqua);
+    border: 1.5px solid var(--greener-aqua);
 }
 .div-uno {
     background-image: url('images/instructors.PNG');
@@ -732,6 +744,106 @@ hr{
     background-position: center;
     background-size: 100% 100%;
 }
+/*-------------------------------------start of blog section-------------------------------------*/
+.blog-container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 50px;
+    width: inherit;
+    height: 500px;
+    margin: 30px 0 50px;
+}
+.inner-blog-container{
+    height: inherit;
+}
+.blog-first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+}
+#first-inner{
+    width: 90%;
+    height: 270px;
+    border: none;
+    border-radius: 30px;
+}
+#first-inner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.blog-first a {
+    color: var(--greener-aqua);
+    font-size: 19px;
+    font-family: 'Geologica';
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.blog-first h3 {
+    font-size: 22px;
+    font-family: 'Geologica';
+    color: var(--fade-black);
+}
+.blog-first p {
+    font-size: 16px;
+    font-family: 'Geologica';
+    color: var(--grey);
+    text-align: left;
+}
+.blog-second {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.blog-second .mini-second{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.blog-second .mini-second .mini-second1{
+    border: none;
+    border-radius: 15px;
+    position: relative;
+}
+.blog-second .mini-second .mini-second1 img{
+    border-radius: 15px;
+}
+.mini-second1 a {
+    color: var(--pure-white);
+    font-size: 16px;
+    font-family: 'Geologica';
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 60px;
+    background-color: var(--greener-aqua);
+    border: none;
+    border-radius: 30px;
+    padding: 5px 15px;
+    position: absolute;
+    top: 115px;
+    box-shadow: 7px  7px 10px var(--light-green-aqua);
+}
+.mini-second2{
+    padding-left: 10px;
+}
+.mini-second2 h3{
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Geologica';
+    color: var(--fade-black);
+    margin-bottom: 10px;
+
+}
+.mini-second2 p{
+    font-size: 16px;
+    font-family: 'Geologica';
+    color: var(--grey);
+    text-align: left;
+}
+/*----------------------------------------------footer------------------------------------------*/
 footer{
     width: inherit;
     height: 650px;
