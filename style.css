@@ -64,12 +64,12 @@ header{
 }
 .logo i{
     color: var(--greener-aqua);
-    font-size: 80px;
+    font-size: 4rem;
 }
  .logo a{
     color: var(--fade-black);
     font-family: 'Geologica';
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 500;
     text-decoration: none;
  }
@@ -89,14 +89,14 @@ header{
 
  nav > ul > li{
     list-style: none;
-    padding: 20px;
+    padding: 1.2rem;
  }
 
  nav > ul > li a{
     color: var(--fade-black);
-    transition: .5s ease-in-out;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3rem;
+    transition: .5s ease-in-out;
  }
  nav > ul > li a.active{
     color: var(--greener-aqua);
@@ -111,20 +111,19 @@ header{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-left: 90px;
  }
  .form > .login{
     color:  var(--fade-black);
     background: transparent;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     border: 1px solid var(--greener-aqua);
     border-radius: 30px;
     outline: none;
     transition: 0.5s ease-in-out;
-    margin-right: 40px;
-    font-size: 20px;
+    margin-right: 2rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    width: 100px;
+    width: 7rem;
  }
  .form > .login:hover{
     background-color: var(--greener-aqua);
@@ -133,12 +132,12 @@ header{
  .form > .register{
     color:  var(--pure-white);
     background-color: var(--greener-aqua);
-    padding: 10px 20px;
+    padding: 1rem 1.5rem;
     border: 1px solid var(--greener-aqua);
     border-radius: 30px;
     outline: none;
     transition: 0.5s ease-in-out;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 400;
  }
  .form > .register:hover{
@@ -148,7 +147,7 @@ header{
 
 /*-------------------hero section---------------*/
  #hero{
-    margin-top: 80px;
+    margin-top: 5rem;
     max-width: inherit;
     width: inherit;
     display: flex;
@@ -162,7 +161,7 @@ header{
     flex-wrap: wrap;
     width: inherit;
     max-width: inherit;
-    height: 500px;
+    min-height: 500px;
     background-image: url("images/hero-bg.PNG");
     background-position: center;
     background-size: 100% 100%;
@@ -171,19 +170,19 @@ header{
  .textplus{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.8rem;
     justify-content: left;
     flex-wrap: wrap;
     width: 55%;
-    margin-top: 100px;
+    margin-top: 6rem;
  }
  .empty-div{
-    width: 40%;
+    width: 30%;
  }
  .text h1{
     font-family: 'Varela Round';
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: capitalize;
     letter-spacing: 0.2rem;
     margin-bottom: 1.2rem;
@@ -191,28 +190,28 @@ header{
  }
  .text p{
     font-family: 'Geologica';
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 1rem;
     color: var(--grey);
     text-align: left;
  }
 .btns{
-    margin: 20px 0 0;
+    margin: 1rem 0 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: inherit;
-    gap: 30px;
+    width: 100%;
+    gap: 1rem;
 }
 .btns > button{
-    padding: 15px;
+    padding: 0.5rem;
+    width: 12rem;
     border-radius: 30px;
     border: none;
     outline: none;
 }
 .btns > button > a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 .btns > #explore{
@@ -221,7 +220,6 @@ header{
 }
 .btns > #explore > i{
     color: var(--pure-white);
-    font-size: 3rem;
 }
 .btns > #learn{
     border: none;
@@ -239,18 +237,19 @@ header{
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 5px;
+    gap: 0.5rem;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 #registered-students{
     display: flex;
-    gap: -10px;
-    margin-bottom: 15px;
+    gap: -2rem;
+    flex-wrap: nowrap;
+    margin-bottom: 0.8rem;
 }
 #pic1, #pic2, #pic3, #pic4{
-    width: 50px;
-    height: 50px;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
 }
 #pic1{
@@ -276,55 +275,53 @@ header{
 #capacity h2{
     text-transform: capitalize;
     color: var(--fade-black);
+    font-size: 1.35rem;
 
 }
 #capacity h2 span{
     color: var(--greener-aqua);
 }
-.image-container{
-    width: 40%;
-    height: inherit;
-    background: transparent;
-}
 .in-btn-seg{
-    margin-top: -12px;
+    margin-top: -12.5px;
 }
 hr{
-    height: 0.1rem;
+    height: 0.2rem;
     width: 100%;
     background: var(--light-green-aqua);
     margin-top: 10px;
     border: none;
     outline: none;
+    z-index: 5;
 }
 #small-square{
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     background: var(--light-green-aqua);
     margin-left: 0;
-    margin-top: -6px;
+    margin-top: -8px;
     transform: rotate(45deg);
 }
 /*--------------------------------specialties------------------------------------------*/
 #specialties{
     width: inherit;
-    padding-top: 100px;
+    padding-top: 5rem;
 }
 .specialties-heading{
     width: inherit;
-    padding: 50px auto 20px;
-    margin-bottom: 80px;
+    padding: 2.5rem auto 1.5rem;
+    margin-bottom: 5rem;
 }
 .specialties-heading > h2{
     font-weight: 600;
     font-family: 'Varela Round';
-    margin-bottom: 10px;
-    font-size: 35px;
+    margin-bottom: .3rem;
+    font-size: 2.5rem;
     color: var(--fade-black);
+    text-transform: capitalize;
 }
 .specialties-heading > p{
     color: var(--grey);
-    font-size: 18px;
+    font-size: 1rem;
     font-family: 'Varela Round';
     font-weight: 400;
 }
@@ -336,11 +333,11 @@ hr{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 3rem;
 }
 .specialty-div{
-    width: 250px;
-    height: 200px;
+    width: 16rem;
+    height: 13rem;
     background: var(--light-green-aqua);
     border: 1px solid var(--grey);
     border-radius: 15px;
@@ -360,11 +357,11 @@ hr{
     flex-wrap: wrap;
 }
 .mini-speciality-div i{
-    font-size: 50px;
+    font-size: 3.2rem;
     color: var(--greener-aqua);
 }
-.specialty-div > h2{
-    margin-top: 15px;
+.specialty-div > h3{
+    margin-top: 1rem;
     text-align: center;
     color: var(--fade-black);
     font-family: 'Geologica';
@@ -379,15 +376,15 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .anchor-tag > a{
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--greener-aqua);
 }
+
 /*------------------------about Us section---------------------*/
 
 #aboutUs{
@@ -395,18 +392,18 @@ hr{
     flex-direction: column;
 }
 .section-intro{
-    padding-top: 70px;
+    padding-top: 4rem;
 }
 .section-intro h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'Varela Round';
     font-weight: 600;
     color: var(--fade-black);
 }
 .section-intro p{
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2rem;
     font: 'Varela Round';
     font-weight: 400;
     margin: 5px 0;
@@ -416,16 +413,16 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    grid-gap: 50px;
     flex-wrap: wrap;
-    margin-top: 50px;
+    gap: 3.5rem;
+    margin-top: 3.5rem;
 }
 .about-pics{
-    width: 50%;
+    width: 40%;
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     grid-template-rows: 1fr 1fr;
-    gap: 30px;
+    gap: 1.7rem;
 }
 .about-pics .item-1{
     grid-row-start: 1;
@@ -440,7 +437,7 @@ hr{
     grid-row-end: 3;
 }
 .about-pics .about-pictures{
-    border-radius: 50px;
+    border-radius: 50%;
 }
 .about-pics .about-pictures img{
     width: 100%;
@@ -449,14 +446,14 @@ hr{
 .about-content{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5rem;
     justify-content: left;
-    width: 48%;
+    width: 55%;
 }
 .about-content h3{
     color: var(--greener-aqua);
     font-family: 'Varela Round';
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 400;
 }
 .about-content p{
@@ -468,13 +465,13 @@ hr{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 10px;
+    padding: .6rem 0.6rem;
     background-color: var(--greener-aqua);
     border: none;
     outline: none;
     border-radius: 30px;
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 1.1rem;
+    margin-left: 0.8rem;
     width: 30%;
     color: var(--pure-white);
 
@@ -482,31 +479,36 @@ hr{
 .about-content button i{
     background-color: var(--pure-white);
     color: var(--greener-aqua);
-    padding: 10px;
+    padding: .6rem;
     border: none;
     border-radius: 23px 30px 30px 23px;
+    transition: 0.5s ease-in-out;
+}
+.about-content button i:hover {
+    color: var(--pure-white);
+    background-color: var(--light-green-aqua);
 }
 /*-------------------------------------------Courses section------------------------------------------*/
 .course-categories, .popular-courses{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2.5rem;
     flex-wrap: wrap;
-    margin: 30px 0;
+    margin: 2rem 0;
 }
 .course-category-div{
-    width: 350px;
-    height: 150px;
+    width: 380px;
+    min-height: 150px;
     border: 1px solid var(--grey);
     background-color: var(--light-aqua);
     border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: space-around;
+    gap: 1rem;
     flex-wrap: wrap;
-    padding: 25px;
+    padding: 0 0.4rem;
 }
 .icon{
     width: 100px;
@@ -526,6 +528,9 @@ hr{
 .course-category-div .course-content{
     padding: 2px;
 }
+.course-category-div .course-content h2{
+    font-size: 1.3rem;
+}
 .course-category-div .course-content a{
     text-decoration: none;
     color: var(--greener-aqua);
@@ -541,7 +546,7 @@ hr{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.5rem;
     flex-wrap: wrap;
     padding: 25px;
 }
@@ -569,6 +574,13 @@ hr{
     color: var(--grey);
     text-align: left;
 }
+.course-category-div2 .course-content p i{
+    margin: 0 .1rem;
+}
+.course-category-div2 .course-content p span{
+    margin-left: 02rem;
+    font-size: 1.2rem;
+}
 .course-category-div2 .course-content .below{
     display: flex;
     justify-content: space-between;
@@ -579,7 +591,7 @@ hr{
 .course-category-div2 .course-content .below h2{
     font-size: 18px;
 }
-.course-category-div2 .course-content .below .inner-div{
+.course-category-div2 .course-content .below button {
     width: 35px;
     height: 35px;
     background: var(--pure-white);
@@ -589,54 +601,55 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    transition: 0.5s ease-in-out;
 }
-.course-category-div2 .course-content .below .inner-div i{
+.course-category-div2 .course-content .below button i{
     color: var(--greener-aqua);
     font-size: 23px;
+    transition: 0.5s ease-in-out;
 }
-.course-category-div2 .course-content .below .inner-div:hover{
+.course-category-div2 .course-content .below button:hover{
     background-color: var(--greener-aqua);
 }
-.course-category-div2 .course-content .below .inner-div:hover i{
+.course-category-div2 .course-content .below button:hover i{
     color: var(--pure-white);
 }
 .online-class-container{
     width: inherit;
-    height: 450px;
+    min-height: 350px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 1rem;
     flex-wrap: wrap;
     background: var(--light-aqua);
-    margin-top: 50px;
-    padding: 25px;
+    margin-top: 3rem;
+    padding: 1rem;
 }
 .online-class-inner-container{
     height: 100%;
-    width: 50%;
+    width: 45%;
 }
 .first{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    padding: 2.5rem 1rem;
+    grid-gap: 1rem;
     width: 45%;
-    padding: 50px 0;
-    grid-gap: 20px;
 }
 #one, #two, #three{
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 #one, #three{
-    width: 200px;
-    height: 200px;
+    width: 10rem;
+    height: 10rem;
 }
 #one{
     background-color: var(--yellow);
 }
 #two{
-    margin-top: 100px;
+    margin-top: 6rem;
     transition: 0.5s ease-in-out;
 }
 #two:hover{
@@ -644,10 +657,11 @@ hr{
 }
 #three{
     background-color: var(--greener-aqua);
+    margin-left: -2rem;
 }
 #two, #four{
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
 }
 #two img{
     height: inherit;
@@ -693,26 +707,41 @@ hr{
 }
 #btn-1{
     background-color: var(--light-red);
-    width: 100px;
+    width: 6rem;
+}
+#btn-1 i{
+    margin-left: 0.8rem;
 }
 #btn-2{
     background-color: var(--greener-aqua);
-    width: 150px;
-    margin-left: 20px;
+    width: 12rem;
+    margin-left: 2.2rem;
+}
+.second {
+    width: 50%;
+    height: 350px;
 }
 .mini-icon{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     padding: 0 10px;
-    width: inherit;
+    width: 100%;
     height: 30%;
     margin: 5px 0;
     gap: 50px;
 }
+.mini-icon i{
+    color: var(--greener-aqua);
+    background-color: var(--pure-white);
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
 .mini-icon h2{
-    margin-left: 20px;
+    margin-left: .1rem;
     color: var(--fade-black);
+    font-size: 1.2rem;
 }
 /*-------------------------------start now subsection--------------------------------*/
 .course-selection-container{
@@ -771,14 +800,14 @@ hr{
     gap: 50px;
     flex-wrap: wrap;
     width: inherit;
-    height: 500px;
+    min-height: 500px;
     margin: 30px 0 50px;
 }
 .inner-blog-container{
     height: inherit;
 }
 .blog-first {
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -817,12 +846,12 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 55%;
 }
 .blog-second .mini-second{
     display: flex;
     align-items: center;
     gap: 15px;
-    flex-wrap: wrap;
 }
 .blog-second .mini-second .mini-second1{
     border: none;
@@ -871,7 +900,6 @@ footer{
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 .footer-div1{
     height: 250px;
