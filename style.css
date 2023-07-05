@@ -1081,4 +1081,635 @@ footer .empty-div form button{
 .sdiv6 {
     right: 130px;
 }
+@media screen and (min-width: 375px) {
+    main{
+        padding: 5px 5px;
+     }
+    /*-------------------------Header---------------------*/
+    header{
+        background: var(--whiter-aqua);
+        padding: 15px 0;
+        display: hidden;
+        top: 0;
+        max-width: inherit;
+        width: inherit;
+        z-index: 10;
+    }
+    
+    .logo {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+    }
+    .logo i{
+        color: var(--greener-aqua);
+        font-size: 2rem;
+    }
+     .logo a{
+        color: var(--fade-black);
+        font-family: 'Geologica';
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: none;
+     }
+     nav{
+        display: none;
+     }
+     .form{
+        display: none;
+     }
+     .form > .login{
+
+     }
+     .form > .login:hover{
+        background-color: var(--greener-aqua);
+        color: var(--pure-white);
+     }
+     .form > .register{
+        color:  var(--pure-white);
+        background-color: var(--greener-aqua);
+        padding: 1rem 1.5rem;
+        border: 1px solid var(--greener-aqua);
+        border-radius: 30px;
+        outline: none;
+        transition: 0.5s ease-in-out;
+        font-size: 1.3rem;
+        font-weight: 400;
+     }
+     .form > .register:hover{
+        color: var(--fade-black);
+        background: transparent;
+     }
+    
+    /*-------------------hero section---------------*/
+     #hero{
+        margin-top: 0.5rem;
+        max-width: inherit;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+     .hero-container{
+        margin-top: 5rem;
+        background-image: none;
+     }
+     .textplus{
+        gap: 0.5rem;
+        width: inherit;
+        margin-top: 0;
+        text-align: justify;
+     }
+     .empty-div{
+        width: 0%;
+     }
+     .text h1{
+        font-size: 2rem;
+        margin-bottom: .7rem;
+     }
+     .text p{
+        font-size: 1rem;
+        text-align: justify;
+     }
+    .btns{
+        display: block;
+        width: inherit;
+    }
+    .btns > button{
+        display: block;
+        margin: 0.1rem auto;
+    }
+    .btns > #explore {
+        margin-bottom: 1rem;
+    }
+    /*------------#capacity forrmating--------------*/
+    #capacity{
+        display: block;
+        margin: 0 auto;
+        margin-top: 0.6rem;
+    }
+    #registered-students{
+        width: 100%;
+        gap: 2rem;
+        margin-bottom: 0.8rem;
+        padding-left: 2.2rem;
+    }
+    #capacity h2{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+    }
+    /*--------------------------------specialties------------------------------------------*/
+    #specialties{
+        padding-top: 2rem;
+    }
+    .specialties{
+        justify-content: center;
+    }
+    .specialty-div{
+        width: 100%;
+    }
+    .mini-speciality-div{
+        margin-left: 125.5px;
+    }
+    
+    /*------------------------about Us section---------------------*/
+    
+    .section-intro{
+        padding-top: 2rem;
+    }
+    .about-bottom{
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .about-pics{
+        width: 100%;
+    }
+    .about-content{
+        gap: 1rem;
+        width: 100%;
+    }
+    .about-content h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .about-content p{
+        text-align: justify;
+    }
+    .about-content button{
+        padding: .6rem;
+        margin-left: 5.5rem;
+        width: 50%;
+    
+    }
+    /*-------------------------------------------Courses section------------------------------------------*/
+    .course-category-div2{
+        width: 100%;
+        gap: 1.2rem;
+        padding: 0.6rem;
+    }
+    .online-class-container{
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+    }
+    .online-class-inner-container{
+        height: 50%;
+        width: 100%;
+    }
+    .first{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    #one, #two, #three{
+        border-radius: 1rem;
+    }
+    #one, #three{
+        width: 10rem;
+        height: 10rem;
+    }
+    #one{
+        background-color: var(--yellow);
+    }
+    #two{
+        margin-top: 6rem;
+        transition: 0.5s ease-in-out;
+    }
+    #two:hover{
+        transform: translate(-5px, 10px);
+    }
+    #three{
+        background-color: var(--greener-aqua);
+        margin-left: -2rem;
+    }
+    #two, #four{
+        width: 6rem;
+        height: 6rem;
+    }
+    #two img{
+        height: inherit;
+        width: inherit;
+        border-radius: 15px;
+    }
+    #four{
+        background-color: var(--greener-aqua);
+        border-radius: 50%;
+        transition: 0.5s ease-in-out;
+    }
+    .inner-image-container{
+        height: inherit;
+        width: inherit;
+        border-radius: 15px;
+        transition: 0.5s ease-in-out;
+    }
+    .container1:hover{
+        transform: translate(10px, -10px);
+    }
+    .container2:hover{
+        transform: translate(-10px, -10px);
+    }
+    .container3:hover{
+        transform: translate(-15px, 12px);
+    }
+    .inner-image-container img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    #five{
+        grid-column: 2 / -1;
+        padding-top: 40px;
+    }
+    #five button{
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        padding: 10px;
+        color: var(--pure-white);
+        font-size: 1rem;
+    }
+    #btn-1{
+        background-color: var(--light-red);
+        width: 6rem;
+    }
+    #btn-1 i{
+        margin-left: 0.8rem;
+    }
+    #btn-2{
+        background-color: var(--greener-aqua);
+        width: 12rem;
+        margin-left: 2.2rem;
+    }
+    .second {
+        width: 50%;
+        height: 350px;
+    }
+    .mini-icon{
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        width: 100%;
+        height: 30%;
+        margin: 5px 0;
+        gap: 50px;
+    }
+    .mini-icon i{
+        color: var(--greener-aqua);
+        background-color: var(--pure-white);
+        border: none;
+        border-radius: 50%;
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+    .mini-icon h2{
+        margin-left: .1rem;
+        color: var(--fade-black);
+        font-size: 1.2rem;
+    }
+    /*-------------------------------start now subsection--------------------------------*/
+    .course-selection-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: inherit;
+        margin: 20px 0;
+        height: 350px;
+    
+    }
+    .inner-course-selection-div{
+        width: 45%;
+        height: 300px;
+        padding: 150px 30px 0;
+        border: none;
+        border-radius: 30px;
+    }
+    .inner-course-selection-div h2{
+        color: var(--pure-white);
+        font-size: 25px;
+        font-family: 'Geologica';
+    }
+    .inner-course-selection-div button{
+        width: 60%;
+        padding: 15px;
+        border: 1.5px solid var(--pure-white);
+        outline: none;
+        border-radius: 30px;
+        color: var(--pure-white);
+        background-color: rgba(255, 255, 255, 0.4);
+        font-size: 20px;
+        margin: 20px 0 0;
+        transition: 0.5s ease-in-out;
+    }
+    .inner-course-selection-div button:hover{
+        background-color: var(--greener-aqua);
+        border: 1.5px solid var(--greener-aqua);
+    }
+    .div-uno {
+        background-image: url('images/instructors.PNG');
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .div-2 {
+        background-image: url('images/students.PNG');
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    /*-------------------------------------start of blog section-------------------------------------*/
+    .blog-container{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+        width: inherit;
+        min-height: 500px;
+        margin: 30px 0 50px;
+    }
+    .inner-blog-container{
+        height: inherit;
+    }
+    .blog-first {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    #first-inner{
+        width: 90%;
+        height: 270px;
+        border: none;
+        border-radius: 30px;
+    }
+    #first-inner img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+    .blog-first a {
+        color: var(--greener-aqua);
+        font-size: 19px;
+        font-family: 'Geologica';
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .blog-first h3 {
+        font-size: 22px;
+        font-family: 'Geologica';
+        color: var(--fade-black);
+    }
+    .blog-first p {
+        font-size: 16px;
+        font-family: 'Geologica';
+        color: var(--grey);
+        text-align: left;
+    }
+    .blog-second {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 55%;
+    }
+    .blog-second .mini-second{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .blog-second .mini-second .mini-second1{
+        border: none;
+        border-radius: 15px;
+        position: relative;
+    }
+    .blog-second .mini-second .mini-second1 img{
+        border-radius: 15px;
+    }
+    .mini-second1 a {
+        color: var(--pure-white);
+        font-size: 16px;
+        font-family: 'Geologica';
+        text-decoration: none;
+        text-transform: capitalize;
+        margin-left: 60px;
+        background-color: var(--greener-aqua);
+        border: none;
+        border-radius: 30px;
+        padding: 5px 15px;
+        position: absolute;
+        top: 115px;
+        box-shadow: 7px  7px 10px var(--light-green-aqua);
+    }
+    .mini-second2{
+        padding-left: 10px;
+    }
+    .mini-second2 h3{
+        text-align: left;
+        font-size: 22px;
+        font-family: 'Geologica';
+        color: var(--fade-black);
+        margin-bottom: 10px;
+    
+    }
+    .mini-second2 p{
+        font-size: 16px;
+        font-family: 'Geologica';
+        color: var(--grey);
+        text-align: left;
+    }
+    /*----------------------------------------------footer------------------------------------------*/
+    footer{
+        width: inherit;
+        height: 650px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-div1{
+        height: 250px;
+        width: 100%;
+        background-color: var(--greener-aqua);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .footer-div1 h1{
+        color: var(--whiter-aqua);
+        text-transform: capitalize;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.5rem;
+        text-align: center;
+    }
+    footer .empty-div{
+        max-width: 90vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .empty-div form{
+        margin: 20px;
+    }
+    footer .empty-div form input, button{
+        width: 200px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        padding: 15px;
+        font-size: 20px;
+    }
+    footer .empty-div form input{
+        width: 500px;
+    }
+    footer .empty-div form button{
+        width: 150px;
+    }
+    .footer-div2{
+        max-width: 90vw;
+        width: 80%;
+        margin: 30px auto 10px;
+        display: flex;
+        gap: 35px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer-div21{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    .left-div{
+        width: 30%;
+        margin-top: 50px;
+    }
+    .left-div p{
+        text-align: left;
+        line-height: 1.8rem;
+        font-size: 18px;
+        color: var(--fade-black);
+    }
+    .left-div-top{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .left-div-top i{
+        color: var(--greener-aqua);
+        font-size: 30px;
+    }
+    .left-div-top a {
+        color: var(--fade-black);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .left-div-top {
+        margin-bottom: 20px;
+        font-family: 'Geologica';
+    }
+    .footer-div21 a{
+        text-decoration: none;
+        color: var(--fade-black);
+        font-size: 16px;
+        transition: 0.5s ease-in-out;
+    }
+    .footer-div21 a:hover {
+        color: var(--greener-aqua);
+    }
+    .footer-div21 a i{
+        margin-right: 10px;
+    }
+    .footer-div21 p{
+        margin: 20px 0 10px;
+        text-align: left;
+    }
+    .social-icons{
+        display: inline-flex;
+        font-size: 1.8rem;
+        gap: 15px;
+    }
+    .social-icons a i{
+        font-size: 30px;
+        transition: 0.5s ease-in-out;
+    }
+    .social-icons a i:hover{
+        transform: scale(1.5);
+    }
+    .fa-square-instagram {
+        color: var(--instagram);
+    }
+    .fa-facebook{
+        color: var(--facebook);
+    }
+    .fa-twitter{
+        color: var(--twitter);
+    }
+    .footer-div3{
+        width: 50%;
+        height: 100px;
+        color: var(--greener-aqua);
+        font-size: 35px;
+        font-weight: 600;
+        font-family: 'Varela Round';
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+    .footer-div3 p{
+        padding: 30px 0 10px;
+        text-transform: capitalize;
+    }
+    .sdiv {
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        background-color: var(--light-green-aqua);
+        position: absolute;
+    }
+    .sdiv1, .sdiv2 {
+        height: 20px;
+        width: 20px;
+        top: 15px;
+    }
+    .sdiv1{
+        left: 100px;
+    }
+    .sdiv2 {
+        right: 100px;
+    }
+    .sdiv3, .sdiv4 {
+        height: 15px;
+        width: 15px;
+        top: 35px;
+    }
+    .sdiv3 {
+        left: 115px;
+    }
+    .sdiv4 {
+        right: 115px;
+    }
+    .sdiv5, .sdiv6 {
+        height: 10px;
+        width: 10px;
+        top: 50px;
+    }
+    .sdiv5 {
+        left: 130px;
+    }
+    .sdiv6 {
+        right: 130px;
+    }
+}
 
