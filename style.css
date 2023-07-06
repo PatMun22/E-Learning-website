@@ -902,7 +902,7 @@ footer{
     flex-direction: column;
 }
 .footer-div1{
-    height: 250px;
+    min-height: 250px;
     width: 100%;
     background-color: var(--greener-aqua);
     margin: 0 auto;
@@ -1081,7 +1081,7 @@ footer .empty-div form button{
 .sdiv6 {
     right: 130px;
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     main{
         padding: 5px 5px;
      }
@@ -1089,10 +1089,10 @@ footer .empty-div form button{
     header{
         background: var(--whiter-aqua);
         padding: 15px 0;
-        display: hidden;
         top: 0;
-        max-width: inherit;
-        width: inherit;
+        left: 0;
+        max-width: 100%;
+        width: 100%;
         z-index: 10;
     }
     
@@ -1253,8 +1253,8 @@ footer .empty-div form button{
     }
     .online-class-container{
         width: 100%;
-        margin-top: 1.5rem;
-        padding: 0.5rem;
+        margin-top: 1rem;
+        padding: 0.2rem;
     }
     .online-class-inner-container{
         height: 50%;
@@ -1265,396 +1265,179 @@ footer .empty-div form button{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1.2rem;
         width: 100%;
     }
-    #one, #two, #three{
+    #one, #two, #three, #four{
         border-radius: 1rem;
-    }
-    #one, #three{
-        width: 10rem;
+        width: 100%;
         height: 10rem;
     }
-    #one{
-        background-color: var(--yellow);
-    }
     #two{
-        margin-top: 6rem;
-        transition: 0.5s ease-in-out;
-    }
-    #two:hover{
-        transform: translate(-5px, 10px);
+        margin-top: 0;
     }
     #three{
-        background-color: var(--greener-aqua);
-        margin-left: -2rem;
-    }
-    #two, #four{
-        width: 6rem;
-        height: 6rem;
-    }
-    #two img{
-        height: inherit;
-        width: inherit;
-        border-radius: 15px;
-    }
-    #four{
-        background-color: var(--greener-aqua);
-        border-radius: 50%;
-        transition: 0.5s ease-in-out;
-    }
-    .inner-image-container{
-        height: inherit;
-        width: inherit;
-        border-radius: 15px;
-        transition: 0.5s ease-in-out;
-    }
-    .container1:hover{
-        transform: translate(10px, -10px);
-    }
-    .container2:hover{
-        transform: translate(-10px, -10px);
-    }
-    .container3:hover{
-        transform: translate(-15px, 12px);
-    }
-    .inner-image-container img{
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
+        margin-left: 0;
     }
     #five{
-        grid-column: 2 / -1;
-        padding-top: 40px;
-    }
-    #five button{
-        border: none;
-        outline: none;
-        border-radius: 30px;
-        padding: 10px;
-        color: var(--pure-white);
-        font-size: 1rem;
-    }
-    #btn-1{
-        background-color: var(--light-red);
-        width: 6rem;
-    }
-    #btn-1 i{
-        margin-left: 0.8rem;
-    }
-    #btn-2{
-        background-color: var(--greener-aqua);
-        width: 12rem;
-        margin-left: 2.2rem;
-    }
-    .second {
-        width: 50%;
-        height: 350px;
-    }
-    .mini-icon{
+        width: 100%;
         display: flex;
         align-items: center;
-        padding: 0 10px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: -1rem;
+        padding-top: -1rem;
+    }
+    .second {
         width: 100%;
-        height: 30%;
-        margin: 5px 0;
-        gap: 50px;
+        height: 250px;
     }
-    .mini-icon i{
-        color: var(--greener-aqua);
-        background-color: var(--pure-white);
-        border: none;
-        border-radius: 50%;
-        padding: 1rem;
-        font-size: 1.3rem;
-    }
-    .mini-icon h2{
-        margin-left: .1rem;
-        color: var(--fade-black);
-        font-size: 1.2rem;
+    .mini-icon{
+        width: 100%;
+        height: 25%;
+        margin: 0 0;
+        gap: 1rem;
     }
     /*-------------------------------start now subsection--------------------------------*/
     .course-selection-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: inherit;
-        margin: 20px 0;
-        height: 350px;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 1rem 0;
+        min-height: 280px;
     
     }
     .inner-course-selection-div{
-        width: 45%;
-        height: 300px;
-        padding: 150px 30px 0;
+        width: 100%;
+        height: 200px;
+        padding: 6.5rem 2rem 0;
         border: none;
         border-radius: 30px;
-    }
-    .inner-course-selection-div h2{
-        color: var(--pure-white);
-        font-size: 25px;
-        font-family: 'Geologica';
     }
     .inner-course-selection-div button{
-        width: 60%;
-        padding: 15px;
-        border: 1.5px solid var(--pure-white);
-        outline: none;
-        border-radius: 30px;
-        color: var(--pure-white);
-        background-color: rgba(255, 255, 255, 0.4);
-        font-size: 20px;
-        margin: 20px 0 0;
-        transition: 0.5s ease-in-out;
-    }
-    .inner-course-selection-div button:hover{
-        background-color: var(--greener-aqua);
-        border: 1.5px solid var(--greener-aqua);
-    }
-    .div-uno {
-        background-image: url('images/instructors.PNG');
-        background-position: center;
-        background-size: 100% 100%;
-    }
-    .div-2 {
-        background-image: url('images/students.PNG');
-        background-position: center;
-        background-size: 100% 100%;
+        width: 70%;
+        padding: 8px;
+        font-size: 1rem;
+        margin: 1rem 0;
     }
     /*-------------------------------------start of blog section-------------------------------------*/
-    .blog-container{
-        display: flex;
-        align-items: stretch;
-        justify-content: space-between;
-        gap: 50px;
-        flex-wrap: wrap;
-        width: inherit;
-        min-height: 500px;
-        margin: 30px 0 50px;
+    #blogs {
+        margin-top: 5rem;
     }
-    .inner-blog-container{
-        height: inherit;
+    .blog-container{
+        gap: 3rem;
+        margin: 2rem 0 3.5rem;
     }
     .blog-first {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 10px;
+        width: 100%;
+        gap: 1rem;
+        padding: 0;
     }
     #first-inner{
-        width: 90%;
-        height: 270px;
-        border: none;
-        border-radius: 30px;
-    }
-    #first-inner img{
         width: 100%;
-        height: 100%;
-        border-radius: 30px;
+        height: 200px;
     }
     .blog-first a {
-        color: var(--greener-aqua);
-        font-size: 19px;
-        font-family: 'Geologica';
-        text-decoration: none;
-        text-transform: capitalize;
+        text-align: center;
     }
     .blog-first h3 {
-        font-size: 22px;
-        font-family: 'Geologica';
-        color: var(--fade-black);
+        font-size: 1.3rem;
+        text-align: center;
     }
     .blog-first p {
-        font-size: 16px;
-        font-family: 'Geologica';
-        color: var(--grey);
-        text-align: left;
+        text-align: justify;
     }
     .blog-second {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        width: 55%;
+        gap: 1.5rem;
+        width: 100%;
     }
     .blog-second .mini-second{
-        display: flex;
-        align-items: center;
-        gap: 15px;
+        flex-direction: column;
+        gap: 1rem;
     }
     .blog-second .mini-second .mini-second1{
-        border: none;
-        border-radius: 15px;
-        position: relative;
+        width: 100%;
     }
     .blog-second .mini-second .mini-second1 img{
-        border-radius: 15px;
+        width: 100%;
     }
     .mini-second1 a {
-        color: var(--pure-white);
-        font-size: 16px;
-        font-family: 'Geologica';
-        text-decoration: none;
-        text-transform: capitalize;
-        margin-left: 60px;
-        background-color: var(--greener-aqua);
-        border: none;
-        border-radius: 30px;
-        padding: 5px 15px;
+        margin-left: 0;
         position: absolute;
-        top: 115px;
-        box-shadow: 7px  7px 10px var(--light-green-aqua);
+        top: 14rem;
+        left: 7.8rem;
     }
     .mini-second2{
-        padding-left: 10px;
+        padding-left: 0;
+        margin-top: 1rem;
     }
     .mini-second2 h3{
-        text-align: left;
-        font-size: 22px;
-        font-family: 'Geologica';
-        color: var(--fade-black);
-        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
     
     }
     .mini-second2 p{
-        font-size: 16px;
-        font-family: 'Geologica';
-        color: var(--grey);
-        text-align: left;
+        text-align: justify;
     }
     /*----------------------------------------------footer------------------------------------------*/
     footer{
-        width: inherit;
-        height: 650px;
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        min-height: 650px;
     }
     .footer-div1{
-        height: 250px;
         width: 100%;
-        background-color: var(--greener-aqua);
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
+        margin: 1rem 0;
+        gap: .8rem;
+        padding: 1rem 0;
     }
     .footer-div1 h1{
-        color: var(--whiter-aqua);
-        text-transform: capitalize;
-        font-size: 40px;
-        font-weight: 600;
-        letter-spacing: 0.5rem;
-        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 0;
     }
     footer .empty-div{
-        max-width: 90vw;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        max-width: 100%;
     }
     footer .empty-div form{
         margin: 20px;
     }
     footer .empty-div form input, button{
-        width: 200px;
-        border: none;
-        outline: none;
-        border-radius: 30px;
-        padding: 15px;
-        font-size: 20px;
+        margin: 0.5rem auto;
     }
     footer .empty-div form input{
-        width: 500px;
+        width: 100%;
     }
     footer .empty-div form button{
-        width: 150px;
+        width: 100%;
     }
     .footer-div2{
-        max-width: 90vw;
-        width: 80%;
-        margin: 30px auto 10px;
-        display: flex;
-        gap: 35px;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        width: 100%;
+        margin: -1.2rem auto;
+        gap: -1rem;
+        align-items: center;
+        flex-direction: column;
     }
     .footer-div21{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 50px;
+        width: 100%;
+        align-items: center;
+        margin-top: -1rem;
     }
     .left-div{
-        width: 30%;
-        margin-top: 50px;
-    }
-    .left-div p{
-        text-align: left;
-        line-height: 1.8rem;
-        font-size: 18px;
-        color: var(--fade-black);
-    }
-    .left-div-top{
-        display: flex;
-        gap: 10px;
+        width: 100%;
+        margin-top: 1.8rem;
         align-items: center;
     }
+    .left-div p{
+        text-align: justify;
+        line-height: 1.2rem;
+    }
+    .left-div-top{
+        gap: 0.7rem;
+    }
     .left-div-top i{
-        color: var(--greener-aqua);
-        font-size: 30px;
-    }
-    .left-div-top a {
-        color: var(--fade-black);
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 800;
-    }
-    .left-div-top {
-        margin-bottom: 20px;
-        font-family: 'Geologica';
-    }
-    .footer-div21 a{
-        text-decoration: none;
-        color: var(--fade-black);
-        font-size: 16px;
-        transition: 0.5s ease-in-out;
-    }
-    .footer-div21 a:hover {
-        color: var(--greener-aqua);
-    }
-    .footer-div21 a i{
-        margin-right: 10px;
-    }
-    .footer-div21 p{
-        margin: 20px 0 10px;
-        text-align: left;
+        font-size: 2rem;
     }
     .social-icons{
-        display: inline-flex;
-        font-size: 1.8rem;
-        gap: 15px;
-    }
-    .social-icons a i{
-        font-size: 30px;
-        transition: 0.5s ease-in-out;
-    }
-    .social-icons a i:hover{
-        transform: scale(1.5);
-    }
-    .fa-square-instagram {
-        color: var(--instagram);
-    }
-    .fa-facebook{
-        color: var(--facebook);
-    }
-    .fa-twitter{
-        color: var(--twitter);
+        margin-bottom: 1.5rem;
     }
     .footer-div3{
         width: 50%;
