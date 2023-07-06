@@ -1028,7 +1028,7 @@ footer .empty-div form button{
 }
 .footer-div3{
     width: 50%;
-    height: 100px;
+    min-height: 100px;
     color: var(--greener-aqua);
     font-size: 35px;
     font-weight: 600;
@@ -1119,9 +1119,6 @@ footer .empty-div form button{
      }
      .form{
         display: none;
-     }
-     .form > .login{
-
      }
      .form > .login:hover{
         background-color: var(--greener-aqua);
@@ -1431,7 +1428,10 @@ footer .empty-div form button{
         line-height: 1.2rem;
     }
     .left-div-top{
+        width: 100%;
         gap: 0.7rem;
+        align-items: center;
+        justify-content: center;
     }
     .left-div-top i{
         font-size: 2rem;
@@ -1440,59 +1440,238 @@ footer .empty-div form button{
         margin-bottom: 1.5rem;
     }
     .footer-div3{
-        width: 50%;
-        height: 100px;
-        color: var(--greener-aqua);
-        font-size: 35px;
-        font-weight: 600;
-        font-family: 'Varela Round';
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-    }
-    .footer-div3 p{
-        padding: 30px 0 10px;
-        text-transform: capitalize;
-    }
-    .sdiv {
-        border: none;
-        outline: none;
-        border-radius: 50%;
-        background-color: var(--light-green-aqua);
-        position: absolute;
+        width: 100%;
+        min-height: 100px;
     }
     .sdiv1, .sdiv2 {
-        height: 20px;
-        width: 20px;
-        top: 15px;
+        top: 1rem;
     }
     .sdiv1{
-        left: 100px;
+        left: 1rem;
     }
     .sdiv2 {
-        right: 100px;
+        right: 1rem;
     }
     .sdiv3, .sdiv4 {
-        height: 15px;
-        width: 15px;
-        top: 35px;
+        top: 3rem;
     }
     .sdiv3 {
-        left: 115px;
+        left: 2rem;
     }
     .sdiv4 {
-        right: 115px;
+        right: 2rem;
     }
     .sdiv5, .sdiv6 {
-        height: 10px;
-        width: 10px;
-        top: 50px;
+        top: 5rem;
     }
     .sdiv5 {
-        left: 130px;
+        left: 3rem;
     }
     .sdiv6 {
-        right: 130px;
+        right: 3rem;
     }
 }
-
+@media screen and (max-width: 1000px) {
+     .form{
+        display: none;
+     }
+    
+    /*-------------------hero section---------------*/
+     #hero{
+        margin-top: 3rem;
+     }
+     .textplus{
+        width: 60%;
+     }
+     .empty-div{
+        width: 30%;
+     }
+     .text p{
+        color: var(--yellow);
+     }
+    /*------------#capacity forrmating--------------*/
+    #capacity{
+        margin: 1rem 0;
+    }
+    /*--------------------------------specialties------------------------------------------*/
+    #specialties{
+        padding-top: 1.5rem;
+    }
+    .specialties-heading{
+        margin-bottom: 4rem;
+    }
+    .specialties{
+        justify-content: center;
+    }
+    
+    /*------------------------about Us section---------------------*/
+    .about-bottom{
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    .about-content{
+        gap: 1rem;
+    }
+    .about-content h3{
+        font-size: 1.5rem;
+    }
+    .about-content p{
+        font-size: 1rem;
+    }
+    .about-content button{
+        margin-left: 8rem;
+        width: 40%;
+    }
+    /*-------------------------------------------Courses section------------------------------------------*/
+    .course-categories, .popular-courses{
+        justify-content: center;
+    }
+    .course-category-div{
+        max-width: 380px;
+        flex-wrap: nowrap;
+    }
+    .course-category-div2{
+        max-width: 350px;
+        min-height: 430px;
+    }
+    .image-div{
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .course-category-div2 .course-content .below{
+        max-width: 300px;
+    }
+    .online-class-container{
+        flex-direction: column;
+        max-height: 450px;
+    }
+    .online-class-inner-container{
+        height: 50%;
+        width: 100%;
+    }
+    .first{
+        display: flex;
+        grid-gap: 1rem;
+        width: 100%;
+    }
+    .second {
+        display: flex;
+        gap: .5rem;
+        width: 100%;
+        height: inherit;
+    }
+    .mini-icon{
+        gap: 1rem;
+    }
+    /*-------------------------------start now subsection--------------------------------*/
+    .inner-course-selection-div{
+        height: 250px;
+        padding: 8rem 1rem 0;
+    }
+    .inner-course-selection-div h2{
+        font-size: 1.5rem;
+    }
+    /*-------------------------------------start of blog section-------------------------------------*/
+    .blog-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: inherit;
+        min-height: 500px;
+        margin: 1rem 0 50px;
+    }
+    .inner-blog-container{
+        height: 50%;
+    }
+    .blog-first {
+        width: 100%;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+    #first-inner{
+        width: 60%;
+        height: 270px;
+        margin: 1rem auto;
+    }
+    .blog-first a {
+        text-align: center;
+    }
+    .blog-first h3 {
+        text-align: center;
+    }
+    .blog-first p {
+        text-align: justify;
+    }
+    .blog-second {
+        width: 100%;
+    }
+    /*----------------------------------------------footer------------------------------------------*/
+    .footer-div1{
+        gap: 2rem;
+    }
+    .footer-div2{
+        width: 100%;
+        gap: 1.1rem;
+        margin-top: 2rem;
+    }
+    .footer-div21{
+        gap: 10px;
+    }
+    .left-div{
+        width: 22%;
+        margin-top: 50px;
+    }
+    .left-div p{
+        text-align: left;
+        line-height: 1.8rem;
+        font-size: 18px;
+        color: var(--fade-black);
+    }
+    .left-div-top{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .left-div-top i{
+        color: var(--greener-aqua);
+        font-size: 30px;
+    }
+    .left-div-top a {
+        color: var(--fade-black);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .left-div-top {
+        margin-bottom: 20px;
+        font-family: 'Geologica';
+    }
+    .sdiv1{
+        left: .5rem;
+    }
+    .sdiv2 {
+        right: .5rem;
+    }
+    .sdiv3, .sdiv4 {
+        top: 40px;
+    }
+    .sdiv3 {
+        left: 1.5rem;
+    }
+    .sdiv4 {
+        right: 1.5rem;
+    }
+    .sdiv5, .sdiv6 {
+        top: 60px;
+    }
+    .sdiv5 {
+        left: 2.4rem;
+    }
+    .sdiv6 {
+        right: 2.4rem;
+    }
+}
