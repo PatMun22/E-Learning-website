@@ -144,13 +144,15 @@ header{
     color: var(--fade-black);
     background: transparent;
  }
-
+ .form > .register:hover,
+ .form > .login:hover {
+    cursor: pointer;
+ }
 /*-------------------hero section---------------*/
  #hero{
     margin-top: 5rem;
     max-width: inherit;
     width: inherit;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
  }
@@ -349,8 +351,7 @@ hr{
     outline: none;
     border-radius: 50%;
     background-color: var(--whiter-aqua);
-    margin-top: -40px;
-    margin-left: 85px;
+    margin: -40px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1083,7 +1084,7 @@ footer .empty-div form button{
 }
 @media screen and (max-width: 1000px) {
     .form{
-       display: none;
+       display: flex;
     }
    
    /*-------------------hero section---------------*/
@@ -1291,13 +1292,8 @@ footer .empty-div form button{
      }
     /*-------------------------Header---------------------*/
     header{
-        background: var(--whiter-aqua);
-        padding: 15px 0;
-        top: 0;
         left: 0;
-        max-width: 100%;
-        width: 100%;
-        z-index: 10;
+        justify-content: center;
     }
     
     .logo {
@@ -1337,6 +1333,7 @@ footer .empty-div form button{
      .hero-container{
         margin-top: 5rem;
         background-image: none;
+        display: none;
      }
      .textplus{
         gap: 0.5rem;
