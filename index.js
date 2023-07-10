@@ -10,4 +10,4 @@ login.addEventListener('onClick', () => {
 register.addEventListener('onClick', () => {
     register.style.display = 'block';
     login.style.display = 'none';
-})
+});

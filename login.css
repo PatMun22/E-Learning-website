@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600&family=Varela+Round&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -13,6 +15,12 @@ body {
     padding: 20px;
     margin: 8% auto 0;
     text-align: center;
+}
+.input-parent-div {
+    margin: 20px 0;
+}
+.log-in {
+    display: none;
 }
 .sign-in-form h1 {
     color: #1c8adb;
@@ -37,7 +45,7 @@ button {
     outline: none;
     cursor: pointer;
 }
-.sign-in-button {
+.sign-in-button, .sign-up-button {
     background-color: #1c8adb;
 }
 .sign-in-twitter-button {
@@ -67,6 +75,9 @@ hr {
     padding: 20px;
     margin: 8% auto 0;
     text-align: center;
+    position: absolute;
+    top: 0;
+    left: auto;
 }
 img{
     width: 70px;
@@ -87,4 +98,18 @@ img{
 }
 a{
     text-decoration: none;
+}
+
+.success input {
+    border: 2px solid green;
+}
+.error input {
+    border: 2px solid red;
+}
+#sign-in-form p, #sign-up-form p {
+    color: red;
+    font-size: 16px;
+    visibility: hidden;
+    margin: 0px 0 5px;
+    text-align: left;
 }

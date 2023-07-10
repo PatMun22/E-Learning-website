@@ -3,37 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
     <title>Sign In Form</title>
 </head>
 <body>
     <section class="sign-in-form">
         <div class="log-in">
-            <h1>Sign In Now</h1>
-            <form>
-                <input id="email" type="email" class="input-box" placeholder="e.g: mitch@yahoo.com" required>
-                <input id="name" type="password" class="input-box" placeholder="Enter your password" required>
+            <form id="sign-in-form" action="" method="get">
+                <div class="title">
+                    <h1>Sign In Now</h1>
+                </div>
+                <div class="input-parent-div">
+                    <input id="email" type="email" class="input-box" placeholder="e.g: mitch@yahoo.com" name="email" required>
+                    <p>Error Message</p>
+                </div>
+                <div class="input-parent-div">
+                    <input id="password" type="password" class="input-box" placeholder="Enter your password" name="password" required>
+                    <p>Error Message</p>
+                </div>
                 <p><span><input type="checkbox" required></span> I agree to <a href="#">the terms of services</a>.</p>
                 <button type="submit" class="sign-in-button">Sign In</button>
                 <hr>
                 <p class="or">OR</p>
-                <button type="button" class="sign-in-twitter-button">Login with twitter</button>
+                <button type="submit" class="sign-in-twitter-button">Login with twitter</button>
                 <p>Do you have an account? <a href="#">Sign Up</a></p>
             </form>
         </div>
         <div class="sign-up">
-            <h1>Sign Up</h1>
-            <form action="">
-                <input type="email" id="email" class="input" required placeholder="e.g: mitch@gmail.com">
-                <input type="text" id="name" class="input" required placeholder="Enter your full name">
-                <input type="password" id="password" class="input" required placeholder="Enter your password">
-                <input type="password" id="password" class="input" required placeholder="Re-enter your password">
+            <form id="sign-up-form" action="" method="get">
+                <div class="title">
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="input-parent-div">
+                    <input type="email" id="email1" class="input" placeholder="e.g: mitch@gmail.com" name="email">
+                    <p>Error Message</p>
+                </div>
+                <div class="input-parent-div">
+                    <input type="text" id="name" class="input" placeholder="Enter your full name" name="name">
+                    <p>Error Message</p>
+                </div>
+                <div class="input-parent-div">
+                    <input type="password" id="password1" class="input" placeholder="Enter your password" name="password1">
+                    <p>Error Message</p>
+                </div>
+                <div class="input-parent-div">
+                    <input type="password" id="password2" class="input" placeholder="Confirm your password" name="password2">
+                    <p>Error Message</p>
+                </div>
                 <p><span><input type="checkbox" required></span> I agree to the <a href="#">terms and conditions</a>.</p>
-                <button>Sign Up</button>
+                <button type="submit" class="sign-up-button">Sign Up</button>
             </form>
             <p>You already have an account? <a href="#">Login here</a>.</p>
         </div>
     </section>
-
+    <script src="login.js"></script>
 </body>
 </html>
