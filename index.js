@@ -1,8 +1,9 @@
 
-let login = document.querySelector('.login');
-let register = document.querySelector('.register');
+let loginForm = document.querySelector('#open-login-form');
+let registerForm = document.querySelector('#open-registration-form');
 
-login.addEventListener('onClick', () => {
+
+login.addEventListener('click', () => {
     login.style.display = 'block';
     register.style.display = 'none';
 })

@@ -148,6 +148,12 @@ header{
  .form > .login:hover {
     cursor: pointer;
  }
+ .fa-bars {
+    font-size: 30px;
+    color: var(--greener-aqua);
+    visibility: hidden;
+    cursor: pointer;
+ }
 /*-------------------hero section---------------*/
  #hero{
     margin-top: 5rem;
@@ -1294,7 +1300,7 @@ footer .empty-div form button{
     /*-------------------------Header---------------------*/
     header{
         left: 0;
-        justify-content: center;
+        justify-content: space-around;
     }
     
     .logo {
@@ -1321,7 +1327,9 @@ footer .empty-div form button{
      .form{
         display: none;
      }
-    
+     .fa-bars {
+        visibility: visible;
+     }
     /*-------------------hero section---------------*/
      #hero{
         margin-top: 0.5rem;

@@ -17,19 +17,31 @@ body {
     text-align: center;
 }
 .input-parent-div {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 .log-in {
     display: none;
 }
+.fa-circle-xmark {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #999;
+    transition: 0.5s ease-in-out;
+}
+.fa-circle-xmark:hover {
+    color: red;
+}
 .sign-in-form h1 {
     color: #1c8adb;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .input-box {
     border-radius: 20px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 90%;
     border: 1px solid #999;
     outline: none;
@@ -40,7 +52,7 @@ button {
     padding: 10px;
     border-radius: 20px;
     font-size: 15px;
-    margin: 10px 0;
+    margin: 5px 0;
     border: none;
     outline: none;
     cursor: pointer;
@@ -60,7 +72,7 @@ a:hover {
     cursor: pointer;
 }
 hr {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 80%;
 }
 .or {
@@ -79,16 +91,12 @@ hr {
     top: 0;
     left: auto;
 }
-img{
-    width: 70px;
-    margin-top: -50px;
-}
 .sign-up h1 {
     color: #1c8adb;
     margin-top: 15px;
     margin-bottom: 20px;
 }
-.input {
+.sign-up .input {
     width: 90%;
     border-radius: 20px;
     margin: 5px 0;
@@ -96,7 +104,7 @@ img{
     outline: none;
     padding: 10px;
 }
-a{
+.sign-up a{
     text-decoration: none;
 }
 

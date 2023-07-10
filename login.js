@@ -1,3 +1,5 @@
+//general form
+let closeSignUpContainer = document.querySelector('.fa-circle-xmark');
 //Sign-up form
 let form2 = document.querySelector('#sign-up-form');
 let regEmail = document.querySelector('#email1');
@@ -5,14 +7,14 @@ let regName = document.querySelector('#name');
 let regPassword = document.querySelector('#password1');
 let confirmRegPassword = document.querySelector('#password2');
 
-//form
+//sign-up form validation
 form2.addEventListener('submit', (event) => {
-    //event.preventDefault();
+    event.preventDefault();
 
-    validateForm();
+    validateSignUpForm();
 });
 
-const validateForm = () => {
+const validateSignUpForm = () => {
     //regEmail
     if(regEmail.value.trim() == '') {
         setError(regEmail, 'Provide email address');
@@ -49,6 +51,10 @@ const validateForm = () => {
     }
 };
 
+closeSignUpContainer.addEventListener('click', () => {
+    form2.style.display = none;
+})
+
 const setError = (element, errorMessage) => {
     const parent = element.parentElement;
     parent.classList.add('error');
@@ -64,18 +70,35 @@ const setSuccess = element => {
 };
 
 const isEmailValid = regEmail => {
-    const regex = ;
+    const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return regex.test(regEmail);
 };
 
 const isPasswordValid = regPassword => {
-    const regex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    const regex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8}$/;
     return regex.test(regPassword);
 };
 
 
 //Login form
+let form1 = document.querySelector('#sign-in-form');
 let loginEmail = doument.getElementById('email');
 let loginPassword = document.getElementById('password');
 let loginBtn = document.getElementsByClassName('.sign-in-button');
 let loginByTwitter = document.getElementsByClassName('.sign-in-twitter-button');
+
+//Login form validation
+
+form1.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    validateLoginForm();
+});
+
+const validateLoginForm = () => {
+    //Login Email
+    if(loginEmail.value.trim() !== )
+    //Login Password
+    //Login Button
+    //Login By Twitter
+}
