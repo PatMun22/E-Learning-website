@@ -16,6 +16,7 @@
     --facebook: hsl(216, 85%, 39%);
     --twitter: hsl(205, 100%, 50%);
     --instagram: hsl(300, 50%, 50%);
+    --green: green;
 }
 
 *{
@@ -153,6 +154,121 @@ header{
     color: var(--greener-aqua);
     visibility: hidden;
     cursor: pointer;
+ }
+ /*-------------------signIn/Up--------------------*/
+ #sign-in-up {
+    position: absolute;
+    z-index: 12;
+ }
+ .auth-container{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    width: 350px;
+    padding: 30px 25px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: var(--light-green-aqua);
+    transition: .5s ease-in-out;
+    visibility: visible;
+ }
+ .auth-container:hover {
+    box-shadow: 10px 10px 30px var(--light-aqua), -10px -10px 30px var(--light-aqua);
+    transform: scale(1.02);
+ }
+ .fa-circle-xmark {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--light-aqua);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+ }
+ .fa-circle-xmark:hover {
+    color: var(--pure-white);
+ }
+ .auth-container h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: .5rem;
+    font-family: 'Varela Round';
+    color: var(--fade-black);
+ }
+ .auth-container .input-div {
+    margin: 0.5rem 0;
+    font-family: 'Varela Round';
+ }
+ .auth-container .input-div input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-aqua);
+    background-color: var(--light-green-aqua);
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: var(--fade-black);
+ }
+ .auth-container .error input {
+    border-bottom: 2px solid var(--light-red);
+ }
+ .auth-container .success input {
+    border-bottom: 2px solid var(--green);
+ }
+ .auth-container .input-div .error-message{
+    color: red;
+    text-align: left;
+    margin-top: 0;
+    font-family: 'Varela Round';
+    visibility: hidden;
+ }
+ .auth-container .error .error-message {
+    visibility: visible;
+ }
+ .auth-container .last-div {
+    margin-top: 0.8rem 0;
+    font-size: 18px;
+    font-family: 'Varela Round';
+ }
+ .auth-container .last-div input {
+    margin-bottom: 1rem;
+ }
+ .auth-container .last-div a{
+    text-decoration: none;
+    color: var(--grey);
+    font-weight: 600;
+    transition: .3s ease-in-out;
+ }
+ .auth-container .last-div a:hover {
+    text-decoration: underline;
+    color: var(--light-red);
+ }
+ .auth-container button {
+    margin: 1rem auto 0;
+    display: block;
+    width: 60%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-aqua);
+    background-color: var(--pure-white);
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: var(--fade-black);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+ }
+ .auth-container button:hover {
+    background-color: var(--light-aqua);
+ }
+ .signInForm {
+    visibility: visible;
+ }
+ .signUpForm {
+    visibility: hidden;
  }
 /*-------------------hero section---------------*/
  #hero{
