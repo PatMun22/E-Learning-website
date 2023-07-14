@@ -21,7 +21,6 @@ let closeSignUp = document.querySelector('.xmark2');
 closeSignIn.addEventListener('click', () => {
     loginForm.style.display = 'none';
 });
-
 closeSignUp.addEventListener('click', () => {
     registerForm.style.display = 'none';
 });
@@ -110,6 +109,24 @@ const validateSignInForm = () => {
         setError(signInPassword, 'Invalid password');
     }
 };
+
+//Newsletter email subscription authentication
+
+let newsletterEmail = document.querySelector('#newsletter');
+let subscriptionBtn = document.querySelector('#newsletter-email');
+
+subscriptionBtn.addEventListener('click', (event) => {
+    validateSubscriptionEmail();
+});
+
+const validateSubscriptionEmail = () => {
+    //email
+    if(isEmailValid) {
+        setSuccess(newsletterEmail);
+    } else {
+        setError(newsletterEmail, 'Invalid email');
+    }
+}
 
 const setError = (element, errorMessage) => {
     const parent = element.parentElement;
