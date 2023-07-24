@@ -149,10 +149,10 @@ header{
  .form > .login:hover {
     cursor: pointer;
  }
- .fa-bars {
+ .fa-bars, .fa-user, .xmark0 {
     font-size: 30px;
     color: var(--greener-aqua);
-    visibility: hidden;
+    display: none !important;
     cursor: pointer;
  }
  /*-------------------signIn/Up--------------------*/
@@ -680,9 +680,8 @@ hr{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    gap: 1.5rem;
     flex-wrap: wrap;
-    padding: 25px;
+    padding: 25px 25px 10px;
 }
 .image-div{
     width: 300px;
@@ -691,12 +690,12 @@ hr{
 .image-div img{
     width: 100%;
     height: inherit;
+    object-fit: cover;
 }
 .course-category-div2 .course-content{
+    margin-top: .8rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
@@ -1220,13 +1219,126 @@ footer .empty-div form button{
 .sdiv6 {
     right: 130px;
 }
-@media screen and (max-width: 1000px) {
-    .form{
-       display: flex;
+@media screen and (max-width: 1280px) {
+    .specialties {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
+    #five {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    header .form {
+        position: absolute;
+        right: 0;
+        top: 5.8rem;
+        width: 14rem;
+        background-color: var(--whiter-aqua);
+        z-index: 2000;
+        padding: 1.5rem 0;
+        border: none;
+        outline: none;
+        border-radius: 0 0 0 1rem;
+        box-shadow: 0 0 -1px var(--grey);
+        display: none;
+    }
+    header .form .login {
+        margin-bottom: .8rem;
+    }
+    .fa-user {
+        display: flex;
+    }
+    .specialties {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*.specialties .specialty-div:nth-child(4) {
+        align-self: center;
+    */
+    .about-bottom {
+        gap: 1.5rem;
+    }
+    .popular-courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.4rem;
+    }
+    .popular-courses .course-category-div2 {
+        max-width: 300px;
+        min-height: 430px;
+        gap: 0.5rem;
+        padding: 10px 10px;
+    }
+    .popular-courses .course-category-div2 .image-div{
+        width: 270px;
+        height: 200px;
+        border-radius: 15px;
+    }
+    .image-div img{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+    .course-category-div2 .course-content{
+        margin-top: .5rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .blog-container{
+        gap: 1.5rem;
+        margin: 1.8rempx 0 3rem;
+    }
+    #first-inner{
+        width: 98%;
+    }
+    .mini-second2 h3{
+        font-size: 18px;
+    }
+    .mini-second2 p{
+        font-size: 12px;
+    }
+    .footer-div2{
+        width: 100%;
+        margin: 20px auto 10px;
+        gap: 2rem;
+    }
+    .sdiv1, .sdiv2 {
+        top: 15px;
+    }
+    .sdiv1{
+        left: 10px;
+    }
+    .sdiv2 {
+        right: 10px;
+    }
+    .sdiv3, .sdiv4 {
+        top: 40px;
+    }
+    .sdiv3 {
+        left: 25px;
+    }
+    .sdiv4 {
+        right: 25px;
+    }
+    .sdiv5, .sdiv6 {
+        top: 60px;
+    }
+    .sdiv5 {
+        left: 40px;
+    }
+    .sdiv6 {
+        right: 40px;
+    }
+}
+@media screen and (max-width: 912px) {
+    
    
    /*-------------------hero section---------------*/
-    #hero{
+   #hero{
        margin-top: 3rem;
     }
     .textplus{
@@ -1254,7 +1366,7 @@ footer .empty-div form button{
    }
    
    /*------------------------about Us section---------------------*/
-   .about-bottom{
+  .about-bottom{
        justify-content: center;
        gap: 1.5rem;
        margin-top: 2rem;
@@ -1273,7 +1385,7 @@ footer .empty-div form button{
        width: 40%;
    }
    /*-------------------------------------------Courses section------------------------------------------*/
-   .course-categories, .popular-courses{
+  .course-categories, .popular-courses{
        justify-content: center;
    }
    .course-category-div{
@@ -1300,10 +1412,8 @@ footer .empty-div form button{
        width: 100%;
    }
    .first{
-       display: flex;
-       grid-gap: 1rem;
-       width: 100%;
-   }
+        width: 100%;
+    }
    .second {
        display: flex;
        gap: .5rem;
@@ -1313,16 +1423,25 @@ footer .empty-div form button{
    .mini-icon{
        gap: 1rem;
    }
+   .mini-second2 h3{
+    font-size: 20px;
+    }
+    .mini-second2 p{
+        font-size: 16px;
+    }
    /*-------------------------------start now subsection--------------------------------*/
    .inner-course-selection-div{
        height: 250px;
        padding: 8rem 1rem 0;
    }
    .inner-course-selection-div h2{
-       font-size: 1.5rem;
+       font-size: 1.2rem;
+   }
+   .inner-course-selection-div button{
+    width: 80%;
    }
    /*-------------------------------------start of blog section-------------------------------------*/
-   .blog-container{
+  .blog-container{
        display: flex;
        align-items: center;
        justify-content: center;
@@ -1359,7 +1478,7 @@ footer .empty-div form button{
        width: 100%;
    }
    /*----------------------------------------------footer------------------------------------------*/
-   .footer-div1{
+.footer-div1{
        gap: 2rem;
    }
    .footer-div2{
@@ -1424,12 +1543,25 @@ footer .empty-div form button{
        right: 2.4rem;
    }
 }
+@media screen and (max-width: 820px) {
+    .specialties, .popular-courses {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .course-categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+    }
+}
+/*
 @media screen and (max-width: 375px) {
     main{
         padding: 5px 5px;
      }
     /*-------------------------Header---------------------*/
-    header{
+   /* header{
         left: 0;
         justify-content: space-around;
     }
@@ -1462,7 +1594,7 @@ footer .empty-div form button{
         visibility: visible;
      }
     /*-------------------hero section---------------*/
-     #hero{
+   /*  #hero{
         margin-top: 0.5rem;
         max-width: inherit;
         width: inherit;
@@ -1505,7 +1637,7 @@ footer .empty-div form button{
         margin-bottom: 1rem;
     }
     /*------------#capacity forrmating--------------*/
-    #capacity{
+    /*#capacity{
         display: block;
         margin: 0 auto;
         margin-top: 0.6rem;
@@ -1523,7 +1655,7 @@ footer .empty-div form button{
     
     }
     /*--------------------------------specialties------------------------------------------*/
-    #specialties{
+    /*#specialties{
         padding-top: 2rem;
     }
     .specialties{
@@ -1538,7 +1670,7 @@ footer .empty-div form button{
     
     /*------------------------about Us section---------------------*/
     
-    .section-intro{
+   /* .section-intro{
         padding-top: 2rem;
     }
     .about-bottom{
@@ -1566,7 +1698,7 @@ footer .empty-div form button{
     
     }
     /*-------------------------------------------Courses section------------------------------------------*/
-    .course-category-div2{
+   /* .course-category-div2{
         width: 100%;
         gap: 1.2rem;
         padding: 0.6rem;
@@ -1622,7 +1754,7 @@ footer .empty-div form button{
         gap: 1rem;
     }
     /*-------------------------------start now subsection--------------------------------*/
-    .course-selection-container{
+   /* .course-selection-container{
         justify-content: center;
         gap: 1.5rem;
         margin: 1rem 0;
@@ -1643,7 +1775,7 @@ footer .empty-div form button{
         margin: 1rem 0;
     }
     /*-------------------------------------start of blog section-------------------------------------*/
-    #blogs {
+  /*  #blogs {
         margin-top: 5rem;
     }
     .blog-container{
@@ -1702,7 +1834,7 @@ footer .empty-div form button{
         text-align: justify;
     }
     /*----------------------------------------------footer------------------------------------------*/
-    footer{
+   /* footer{
         width: 100%;
         min-height: 650px;
     }
@@ -1796,3 +1928,4 @@ footer .empty-div form button{
         right: 3rem;
     }
 }
+**/

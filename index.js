@@ -151,3 +151,19 @@ const isPasswordValid = element => {
     const regP = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})/;
     return regP.test(element);
 }
+
+let user = document.querySelector('.fa-user');
+let signIn_Up = document.querySelector('.form');
+let closeSignIn_Up = document.querySelector('.xmark0');
+
+user.addEventListener('click', () => {
+    signIn_Up.style.display = 'block';
+    user.style.display = 'none';
+    closeSignIn_Up.style.display = 'block';
+})
+
+closeSignIn_Up.addEventListener('click', () => {
+    signIn_Up.style.display = 'none';
+    user.style.display = 'block';
+    closeSignIn_Up.style.display = 'none';
+})
