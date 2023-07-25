@@ -25,11 +25,30 @@ closeSignUp.addEventListener('click', () => {
     registerForm.style.display = 'none';
 });
 
-//let bars = document.querySelector('.fa-bars');
+//Displaying and closing the user buttons on smaller screens
 
-//bars.addEventListener('click', () => {
-//    
-//});
+let user = document.querySelector('.fa-user');
+let signIn_Up = document.querySelector('.form');
+let closeSignIn_Up = document.querySelector('.xmark0');
+let userParent = document.querySelector('.fa-solid .fa-user')
+
+user.addEventListener('click', () => {
+    signIn_Up.style.display = 'block';
+    userParent.classList.add('.fa-circle-xmark .xmark0');
+    userParent.classList.remove('.fa-user');
+})
+
+closeSignIn_Up.addEventListener('click', () => {
+    signIn_Up.style.display = 'none';
+    user.style.display = 'block';
+    closeSignIn_Up.style.display = 'none';
+})
+let bars = document.querySelector('.fa-bars');
+let nav = document.querySelector('nav');
+
+bars.addEventListener('click', () => {
+    nav.style.display = 'block';
+});
 
 //Sign In form vaidation
 let signUpName = document.querySelector('#signUpName');
@@ -151,19 +170,3 @@ const isPasswordValid = element => {
     const regP = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})/;
     return regP.test(element);
 }
-
-let user = document.querySelector('.fa-user');
-let signIn_Up = document.querySelector('.form');
-let closeSignIn_Up = document.querySelector('.xmark0');
-
-user.addEventListener('click', () => {
-    signIn_Up.style.display = 'block';
-    user.style.display = 'none';
-    closeSignIn_Up.style.display = 'block';
-})
-
-closeSignIn_Up.addEventListener('click', () => {
-    signIn_Up.style.display = 'none';
-    user.style.display = 'block';
-    closeSignIn_Up.style.display = 'none';
-})
