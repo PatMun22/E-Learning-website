@@ -21,6 +21,7 @@ let closeSignUp = document.querySelector('.xmark2');
 closeSignIn.addEventListener('click', () => {
     loginForm.style.display = 'none';
 });
+
 closeSignUp.addEventListener('click', () => {
     registerForm.style.display = 'none';
 });
