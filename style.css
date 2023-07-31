@@ -1221,20 +1221,22 @@ footer .empty-div form button{
 .sdiv6 {
     right: 130px;
 }
+.lastH {
+    color: var(--green);
+    border-top: 2px solid var(--light-green-aqua);
+    padding-top: .5rem;
+}
+.lastH .first-span{
+    margin-left: 5rem;
+}
+.lastH i{
+    color: var(--light-green-aqua);
+    margin-right: .5rem;
+}
+.lastH .second-span{
+    font-size: .8rem;
+}
 @media screen and (max-width: 1280px) {
-    header .form {
-        position: absolute;
-        right: 0;
-        top: 5.8rem;
-        width: 14rem;
-        background-color: var(--whiter-aqua);
-        z-index: 2000;
-        padding: 1.5rem 0;
-        border: none;
-        outline: none;
-        border-radius: 0 0 1rem 1rem;
-        display: none;
-    }
     header .form button {
         display: block;
         margin: 0 auto;
@@ -1497,17 +1499,11 @@ footer .empty-div form button{
    .sdiv2 {
        right: .5rem;
    }
-   .sdiv3, .sdiv4 {
-       top: 40px;
-   }
    .sdiv3 {
        left: 1.5rem;
    }
    .sdiv4 {
        right: 1.5rem;
-   }
-   .sdiv5, .sdiv6 {
-       top: 60px;
    }
    .sdiv5 {
        left: 2.4rem;
@@ -1587,17 +1583,11 @@ footer .empty-div form button{
     .sdiv2 {
         right: .5rem;
     }
-    .sdiv3, .sdiv4 {
-        top: 40px;
-    }
     .sdiv3 {
         left: 1.5rem;
     }
     .sdiv4 {
         right: 1.5rem;
-    }
-    .sdiv5, .sdiv6 {
-        top: 60px;
     }
     .sdiv5 {
         left: 2.4rem;
@@ -1650,17 +1640,11 @@ footer .empty-div form button{
     .sdiv2 {
         right: .2rem;
     }
-    .sdiv3, .sdiv4 {
-        top: 40px;
-    }
     .sdiv3 {
         left: 1rem;
     }
     .sdiv4 {
         right: 1rem;
-    }
-    .sdiv5, .sdiv6 {
-        top: 60px;
     }
     .sdiv5 {
         left: 2rem;
@@ -1870,7 +1854,7 @@ footer .empty-div form button{
         text-align: center;
     }
     .mini-second1 a{
-        top: 14.5rem;
+        top: 16rem;
         left: 4rem;
     }
     .footer-div1 h1{
@@ -1898,5 +1882,28 @@ footer .empty-div form button{
     }
     .footer-div3 p{
         font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 375) {
+    .mini-second1 a {
+        top: 10rem;
+    }
+    .sdiv1{
+        left: .1rem;
+    }
+    .sdiv2 {
+        right: .1rem;
+    }
+    .sdiv3 {
+        left: 0.3rem;
+    }
+    .sdiv4 {
+        right: 0.3rem;
+    }
+    .sdiv5 {
+        left: 1rem;
+    }
+    .sdiv6 {
+        right: 1rem;
     }
 }
